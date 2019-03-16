@@ -1,689 +1,791 @@
-<!DOCTYPE html>
-<!--[if lt IE 8 ]><html class="no-js ie ie7" lang="en"> <![endif]-->
-<!--[if IE 8 ]><html class="no-js ie ie8" lang="en"> <![endif]-->
-<!--[if (gte IE 8)|!(IE)]><!--><html class="no-js" lang="en"> <!--<![endif]-->
+
+<!DOCTYPE HTML>
+<html>
 <head>
+<title>This is Shivam!</title>
+<link href="css/bootstrap.css" rel='stylesheet' type="text/css" />
+  <link rel="shortcut icon" type="image/png" href="images/favicon2.png"/>
 
-   <!--- Basic Page Needs
-   ================================================== -->
-   <meta charset="utf-8">
-   <title>Shivam Sahu</title>
-	<meta name="description" content="">
-	<meta name="author" content="">
 
-   <!-- Mobile Specific Metas
-   ================================================== -->
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-	<!-- CSS
-    ================================================== -->
-   <link rel="stylesheet" href="css/default.css">
-	<link rel="stylesheet" href="css/layout.css">
-   <link rel="stylesheet" href="css/media-queries.css">
-   <link rel="stylesheet" href="css/magnific-popup.css">
-
-   <!-- Script
-   ================================================== -->
-	<script src="js/modernizr.js"></script>
-
-   <!-- Favicons
-	================================================== -->
-	<link rel="shortcut icon" href="favicon.png" >
-
+<script src="js/jquery.min.js"></script>
+<link href="css/style.css" rel='stylesheet' type='text/css' />
+   <!-- Custom Theme files -->
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+ <meta name="keywords" content="Portfolio sahushivam Shivam Sahu Web Developer MMMUT Madan Mohan Malaviya University of Technology Gorakhpur" />
+<!-- webfonts -->
+  <link href='//fonts.googleapis.com/css?family=Asap:400,700,400italic' rel='stylesheet' type='text/css'>
+  <link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,600' rel='stylesheet' type='text/css'>
+<!-- webfonts -->
+  
+  <!--Calendar Css-->
+  <link rel="stylesheet" href="./css/github-calendar.css">
+  
+  
+  <!--Activity Css-->
+  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+  <link rel="stylesheet" href="./css/github-activity-0.1.4.min.css">
+  
+  <!---- start-smoth-scrolling---->
+<script type="text/javascript" src="js/move-top.js"></script>
+<script type="text/javascript" src="js/easing.js"></script>
+  <script type="text/javascript">
+      jQuery(document).ready(function($) {
+        $(".scroll").click(function(event){
+          event.preventDefault();
+          $('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+        });
+      });
+    </script>
+ <!---- start-smoth-scrolling---->
 </head>
-
-<body>
-
-   <!-- Header
-   ================================================== -->
-   <header id="home">
-
-      <nav id="nav-wrap">
-
-         <a class="mobile-btn" href="#nav-wrap" title="Show navigation">Show navigation</a>
-	      <a class="mobile-btn" href="#" title="Hide navigation">Hide navigation</a>
-
-         <ul id="nav" class="nav">
-            <li class="current"><a class="smoothscroll" href="#home">Home</a></li>
-            <li><a class="smoothscroll" href="#about">About</a></li>
-	         <li><a class="smoothscroll" href="#resume">Resume</a></li>
-<!--             <li><a class="smoothscroll" href="#portfolio">Works</a></li>
-            <li><a class="smoothscroll" href="#testimonials">Testimonials</a></li>
-            <li><a class="smoothscroll" href="#contact">Contact</a></li> -->
-         </ul> <!-- end #nav -->
-
-      </nav> <!-- end #nav-wrap -->
-
-      <div class="row banner">
-         <div class="banner-text"><br><br><br><br><br><br><br>
-            <h1 class="responsive-headline">Shivam Sahu</h1>
-            <p class="intro-position">
-                  <!-- <h3><span>Competitive Programmer</span></h3>  -->
-               </p>
-
-            <h3><span>Junior Undergraduate</span>, <span>student</span> at <br><span>Madan Mohan Malaviya University of Technology</span><a class="smoothscroll" href="#about"> <br>Start scrolling</a>
-            and learn more <a class="smoothscroll" href="#about">about me</a>.</h3>
-            <hr />
-            <br><br>
-            <ul class="social">
-               <li><a href="https://www.facebook.com/sahushivam2"><i class="fa fa-facebook"></i></a></li>
-               <li><a href="https://twitter.com/sahushivam25"><i class="fa fa-twitter"></i></a></li>
-               <li><a href=""><i class="fa fa-google-plus"></i></a></li>
-               <li><a href="https://www.linkedin.com/in/sahushivam/"><i class="fa fa-linkedin"></i></a></li>
-               <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-               <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
-               <li><a href="#"><i class="fa fa-skype"></i></a></li>
-            </ul>
-         </div>
+  <body>
+    <!-- container -->
+    
+        <!-- header -->
+      <div id="home" class="header">
+        <div class="container uoyyo">
+        <!-- top-hedader -->
+        <div class="top-header">
+          <!-- /logo -->
+          <!--top-nav---->
+          <div class="top-nav">
+          <div class="navigation">
+          <div class="logo" style="background: black; color: white;">
+            <h1><a href="index.html"><span>DEV</span></a></h1>
+          </div>
+          <div class="navigation-right">
+            <span class="menu"><img src="images/menu.png" alt=" " /></span>
+            <nav class="link-effect-3" id="link-effect-3">
+              <ul class="nav1 nav nav-wil">
+                <li class="active"><a data-hover="Home" href="index.html">Home</a></li>
+                <li><a class="scroll" data-hover="About" href="#about">About</a></li>
+                <li><a class="scroll" data-hover="Projects" href="#projects" >Projects</a></li>
+                <li><a class="scroll" data-hover="Education" href="#work">Education</a></li>
+                <li><a class="scroll" data-hover="Activity" href="#services">Activity</a></li>
+                <li><a class="scroll" data-hover="Contributions" href="#port">Contributions</a></li>
+                <li><a class="scroll" data-hover="Github" href="#ghTimeline">Github</a></li>
+                <li><a class="scroll" data-hover="Contact" href="#contact">Contact </a></li>
+              </ul>
+            </nav>
+              <!-- script-for-menu -->
+                <script>
+                   $( "span.menu" ).click(function() {
+                   $( "ul.nav1" ).slideToggle( 300, function() {
+                   // Animation complete.
+                    });
+                   });
+                </script>
+              <!-- /script-for-menu -->
+          </div>
+          <div class="clearfix"></div>
+        </div>
+        <!-- /top-hedader -->
+        </div>
+      <div class="banner-info">
+        <div class="col-md-7 header-right">
+          <h1>Hi !</h1>
+          <h6>WEB DEVELOPER & Competitive Programmer</h6>
+          <ul class="address">
+          
+          <li>
+              <ul class="address-text">
+                <li><b>NAME</b></li>
+                <li>Shivam Sahu</li>
+              </ul>
+            </li>
+            <!--<li>
+              <ul class="address-text">
+                <li><b>PHONE </b></li>
+                <li>+91 8860 377 453</li>
+              </ul>
+            </li>-->
+            
+            <li>
+              <ul class="address-text">
+                <li><b>E-MAIL </b></li>
+                <li><a href="mailto:sahushivam25.com"> sahushivam25.com</a></li>
+              </ul>
+            </li>
+            <li>
+              <ul class="address-text">
+                <li><b>E-MAIL (2) </b></li>
+                <li><a href="mailto:malaviyanshivam@gmail.com">malaviyanshivam@gmail.com</a></li>
+              </ul>
+            </li>
+            <li>
+              <ul class="address-text">
+                <li><b>ADDRESS </b></li>
+                <li>Gorakhpur, India</li>
+              </ul>
+            </li>
+            <li>
+                
+                <ul class="address-text">
+                  <li><b> VISIT ME</b></li>
+                  <li style=" margin-right: 15px;"><a href="https://github.com/sahushivam"><i class="fa fa-2x fa-github"></i> </a></li>
+                  <li style="margin-right: 15px;"><a href="https://www.linkedin.com/in/sahushivam/"><i class="fa fa-2x fa-linkedin"></i>  </a></li>
+                  <li style="margin-right: 15px;"><a href="https://plus.google.com/"><i class="fa fa-2x fa-google-plus"></i>  </a></li>
+                </ul>
+                
+                
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-5 header-left">
+          <img src="images/mainPic.jpg" alt="">
+        </div>
+        <div class="clearfix"> </div>
+            
+          </div>
       </div>
+    </div>
+  </div>
+    
+        <!-- about -->
+      <div id="about" class="about">
+        <div class="col-md-6 about-left">
+          <div id="owl-demo1" class="owl-carousel owl-carousel2">
+                          <div class="item">
+                            <div class="about-left-grid">
+                      <h2>Hi! I'm <span>Shivam Sahu</span></h2>
+                      <p align="justify">Currently, I am an Under Grad student at Madan Mohan Malaviya University of Technology, Gorakhpur. I am a Web Developer and a Competitive Programmer.
+                        A team player with a can-do attitude, phenomenal time management skills, and a strong userfocus.
+                        I have developed several web based projects, details of which are below. Visit my GH profile for  more information on my work, project and contributions.
+                      </p>
+                      <ul>
+                        <li><a class="a-btn-a scroll" href="#projects">My Projects</a></li>
+                      </ul>
+                    </div>
+                          </div>
+                            <div class="item">
+                            <div class="about-left-grid">
+                      <h2>Hi! I'm <span>Shivam Sahu</span></h2>
+                      <p align="justify">Apart from being a web developer, I spend most of my time playing cricket and in gym. Kodaline and Passenger are my favourite bands. Also, I eat and eat and eat whenever I get a chance :P
+                        
+                        When forced indoors, I follow a number of sci-fi and auto-biographical genre movies and television shows, I've binge watched a lot of tv-series. I am an aspiring learner, and I spend a large amount of my free time exploring the latest technology advancements in the web development world. Also, did I tell you that I eat a lot XD</p>
+                              <ul>
+                        <li><a class="a-btn-a scroll" href="#projects">My Projects</a></li>
+                      </ul>
+                    </div>
+                          </div>
+                          
+          </div>
+        </div>
+        <div class="col-md-6 about-right">
+          <div class="LI-profile-badge linkBad"  data-version="v1" data-size="large"
+             data-locale="en_US" data-type="vertical" data-theme="dark"
 
-      <!-- <p class="scrolldown">
-         <a class="smoothscroll" href="#about"><i class="icon-down-circle"></i></a>
-      </p> -->
-
-   </header> <!-- Header End -->
-
-
-   <!-- About Section
-   ================================================== -->
-   <section id="about" style="padding-top:150px;padding-bottom: 150px">
-
-      <div class="row">
-
-         <div class="three columns">
-
-            <img class="profile-pic"  src="images/profilepic.jpg" alt="" />
-
-         </div>
-
-         <div class="nine columns main-col">
-
-            <h2>About Me</h2>
-
-            <p class="lead add-bottom" style="color: white;">I come from Jaunpur, a small district near Varansi. I have done my schooling from St. John's School, Siddiqpur, Jaunpur. My areas of interest are Algorithms,Machine Learning,Web and Android Applications. I do competitive Programming at hackerrank, codechef (handle-sahushivam).
-            </p>
-
-
-            <div class="row">
-
-               <div class="columns contact-details">
-
-                  <h2>Contact Details</h2>
-                  <p class="address">
-						   <span>Shivam Sahu,</span><br>
-						   <span>Dall Mill,<br>
-						         Moh-Rasulabad, Post-Sadar,<br>Jaunpur-222 001.
-                     </span><br>
-						   <span>Mob: +919453866848</span><br>
-                     <span>Email: sahushivam25@gmail.com</span>
-					   </p>
-
-               </div>
-
-               <div class="columns download">
-                  <p>
-                     <a href="ShivamSahuResume.pdf" class="button"><i class="fa fa-download"></i>Download Resume</a>
-                  </p>
-               </div>
-
-            </div> <!-- end row -->
-
-         </div> <!-- end .main-col -->
-
+             data-vanity="sahushivam">
+            <a class="LI-simple-link" href='https://in.linkedin.com/in/sahushivam?trk=profile-badge'>
+              Shivam Sahu</a></div>
+        </div>
+        <div class="clearfix"> </div>
+              <link href="css/owl.carousel.css" rel="stylesheet">
+                  <script src="js/owl.carousel.js"></script>
+      <script>
+        $(document).ready(function() {
+          $("#owl-demo1").owlCarousel({
+            items : 1,
+            lazyLoad : false,
+            autoPlay : true,
+            navigation : false,
+            navigationText :  false,
+            pagination : true,
+          });
+        });
+      </script>
+      <!-- Feedback -->
+      <script>
+        $(document).ready(function() {
+          $("#owl-demo3").owlCarousel({
+            items : 1,
+            lazyLoad : false,
+            autoPlay : true,
+            navigation : false,
+            navigationText :  true,
+            pagination :true,
+          });
+        });
+      </script>
       </div>
+      
+        <!--info on projects-->
+      <div class="blog nice-bg" id="projects">
+      <div class="container">
+        <div class="service-head text-center">
+          <h4 >PROJECTS</h4>
+          <h3 style="color:white;">MY <span>PROJECTS</span></h3>
+          <span class="border one"></span>
+        </div>
+        <div class="news-grid w3l-agile">
+          <div align="center" class="col-md-4 news-text full-height custom-div">
+            <h3> <a href="#" data-toggle="modal" data-target="#myModal1">DISCUSSION FORUM</a>
+            </h3>
+            <a href="#" data-toggle="modal" data-target="#myModal1" class="read hvr-shutter-in-horizontal">Read More</a>
+          </div>
+        </div>
+        <div class="news-grid ">
+          <div align="center" class="col-md-4 news-text full-height custom-div">
+            <h3> <a href="#" data-toggle="modal" data-target="#myModal2">T&P WEBSITE</a></h3>
+            <p></p>
+            <a href="#" data-toggle="modal" data-target="#myModal2" class="read hvr-shutter-in-horizontal">Read More</a>
+          </div>
+        </div>
+        <div class="news-grid ">
+          <div align="center" class="col-md-4 news-text full-height custom-div">
+            <h3> <a href="#" data-toggle="modal" data-target="#myModal3">NETWORKED TIC-TAC-TOE</a></h3>
+            <p></p>
+            <a href="#" data-toggle="modal" data-target="#myModal3" class="read hvr-shutter-in-horizontal">Read More</a>
+          </div>
+        </div>
+        <div class="news-grid ">
+          <div align="center" class="col-md-4 news-text full-height custom-div">
+            <h3> <a href="#" data-toggle="modal" data-target="#myModal4">MUSIC PLAYER AND PUZZLE GAME</a></h3>
+            <p align="justify"></p><a href="#" data-toggle="modal" data-target="#myModal4" class="read hvr-shutter-in-horizontal">Read More</a>
+          </div>
+        </div>
+        <div class="news-grid ">
+          <div align="center" class="col-md-4 news-text full-height custom-div">
+            <h3> <a href="#" data-toggle="modal" data-target="#myModal9">WEB CRAWLER</a></h3>
+            <p align="justify"></p><a href="#" data-toggle="modal" data-target="#myModal9" class="read hvr-shutter-in-horizontal">Read More</a>
+          </div>
+        </div>
+        <div class="news-grid ">
+          <div align="center"  class="col-md-4 news-text full-height custom-div">
+            <h3> <a href="#" data-toggle="modal" data-target="#myModal5">KEYLOGGER</a></h3>
+            <p align="justify"></p><a href="#" data-toggle="modal" data-target="#myModal5" class="read hvr-shutter-in-horizontal">Read More</a>
+          </div>
+        </div>
+      </div>
+    </div>
 
-   </section> <!-- About Section End-->
-
-
-   <!-- Resume Section
-   ================================================== -->
-   <section id="resume">
-
-      <!-- Education
-      ----------------------------------------------- -->
-      <div class="row education">
-
-         <div class="three columns header-col">
-            <h1><span>Education</span></h1>
-         </div>
-
-         <div class="nine columns main-col">
-
-            <div class="row item">
-
-               <div class="twelve columns">
-
-                  <h3>Madan Mohan Malaviya University of Technology</h3>
-                  <p class="info">Bachelar of Technology <span>&bull;</span> <em class="date">July 2016- Present</em></p>
-
-                  <p>
-                  I am currently pursuing my B.Tech degree in Computer Science and Engineering from Madan Mohan Malviya University of Technology,Gorakhpur,India.
-                  </p>
-
-               </div>
-
-            </div> <!-- item end -->
-
-            <div class="row item">
-
-               <div class="twelve columns">
-
-                  <h3>St. John's School, Siddiqpur, Jaunpur.</h3>
-                  <p class="info">ISC (XII) &nbsp;
-                     &nbsp;&nbsp;&nbsp;<span>&bull;</span> <em class="date">May 2015</em> &nbsp;
-                     &nbsp;&nbsp;&nbsp;
-                     <span>&bull;</span><em style="" class="date">91.6%</em></p>
-
-                  <p class="info">ICSE (X) &nbsp;
-                     &nbsp;&nbsp;&nbsp;<span>&bull;</span> <em class="date">May 2013</em>
-                  &nbsp;
-                     &nbsp;&nbsp;&nbsp; &nbsp;<span>&bull;</span><em style="" class="date">90.0%</em></p>
+      <!--modals for projects -->
+      <div class="modal ab fade" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog about" role="document">
+          <div class="modal-content about">
+            <div class="modal-header">
+              <button type="button" class="close ab" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            </div>
+            <div class="modal-body about">
+              <div class="about">
+                
+                <div class="about-inner">
                   
+                  <!-- <img src="images/stuffer.png" class="modalImage" alt="about"/> -->
 
-               </div>
-
-            </div> <!-- item end -->
-
-         </div> <!-- main-col end -->
-
-      </div> <!-- End Education -->
-
-
-      <!-- Work
-      ----------------------------------------------- -->
-      <div class="row work">
-
-         <div class="three columns header-col">
-            <h1><span>Experience</span></h1>
-         </div>
-
-         <div class="nine columns main-col">
-
-            <div class="row item">
-
-               <div class="twelve columns">
-
-                  <h3>Web Development Intern</h3>
-                  <p class="info">Summer Internship at Olcademy <span>&bull;</span> <em class="date">April- July 2018</em></p>
-
-                  <p>
-                  Worked on implementing PTE Simulator in website and course recommendation system.
+                  
+                  <h4 class="tittle">DISCUSSION FORUM</h4>
+                  <p align="left" style="padding-left: 10%;">This forum is developed to facilitate discussion within a campus.<br>
+                    
+                    • Messenger is integrated to send direct message to a person. <br>
+                    • Discussion can be filtered on basis of tags <br>
+                    • Admin Panel is provided to add or remove a user.<br>
                   </p>
-
-               </div>
-
-            </div> <!-- item end -->
-
-            <div class="row item">
-
-               <div class="twelve columns">
-
-                  <h3>Web Development Intern</h3>
-                  <p class="info">Summer Internship at Smart HealthZone Pvt. Ltd. Gorakhpur <span>&bull;</span> <em class="date">May-June 2018</em></p>
-
-                  <p>
-                  Develop front-end web application using HTML/CSS and JavaScript and backend with
-MySQL,PHP, and REST API. Developed Chatbot by use of Chatfuel and Janis API on Facebook Messenger Platform..
-                  </p>
-
-               </div>
-
-            </div> <!-- item end -->
-
-         </div> <!-- main-col end -->
-
-      </div> <!-- End Work -->
-
-
-      <!-- Skills
-      ----------------------------------------------- -->
-      <div class="row skill">
-
-         <div class="three columns header-col">
-            <h1><span>Skills</span></h1>
-         </div>
-
-         <div class="nine columns main-col">
-
-            <p>
-            </p>
-
-				<div class="bars">
-
-				   <ul class="skills">
-					   <li><span class="bar-expand photoshop"></span><em>JAVA</em></li>
-                  <li><span class="bar-expand illustrator"></span><em>C/C++</em></li>
-						<li><span class="bar-expand wordpress"></span><em>PHP</em></li>
-						<li><span class="bar-expand css"></span><em>CSS</em></li>
-						<li><span class="bar-expand html5"></span><em>HTML5</em></li>
-                  <li><span class="bar-expand jquery"></span><em>Python</em></li>
-					</ul>
-
-				</div><!-- end skill-bars -->
-
-			</div> <!-- main-col end -->
-
-      </div> <!-- End skills -->
-
-<!--    </section> <!-- Resume Section End-->
-
-
-   <!-- Portfolio Section
-   ================================================== -->
-   <!-- <section id="portfolio">
-
-      <div class="row">
-
-         <div class="twelve columns collapsed">
-
-            <h1>Check Out Some of My Works.</h1>
-
-            <!-- portfolio-wrapper -->
-        <!--     <div id="portfolio-wrapper" class="bgrid-quarters s-bgrid-thirds cf">
-
-          	   <div class="columns portfolio-item">
-                  <div class="item-wrap">
-
-                     <a href="#modal-01" title="">
-                        <img alt="" src="images/portfolio/coffee.jpg">
-                        <div class="overlay">
-                           <div class="portfolio-item-meta">
-          					      <h5>Coffee</h5>
-                              <p>Illustrration</p>
-          					   </div>
-                        </div>
-                        <div class="link-icon"><i class="icon-plus"></i></div>
-                     </a>
-
-                  </div>
-          		</div> <!-- item end -->
-
-             <!--   <div class="columns portfolio-item">
-                  <div class="item-wrap">
-
-                     <a href="#modal-02" title="">
-                        <img alt="" src="images/portfolio/console.jpg">
-                        <div class="overlay">
-                           <div class="portfolio-item-meta">
-          					      <h5>Console</h5>
-                              <p>Web Development</p>
-          					   </div>
-                        </div>
-                        <div class="link-icon"><i class="icon-plus"></i></div>
-                     </a>
-
-                  </div>
-          		</div> <!-- item end -->
-<!-- 
-               <div class="columns portfolio-item">
-                  <div class="item-wrap">
-
-                     <a href="#modal-03" title="">
-                        <img alt="" src="images/portfolio/judah.jpg">
-                        <div class="overlay">
-                           <div class="portfolio-item-meta">
-          					      <h5>Judah</h5>
-                              <p>Webdesign</p>
-          					   </div>
-                        </div>
-                        <div class="link-icon"><i class="icon-plus"></i></div>
-                     </a>
-
-                  </div>
-          		</div> <!-- item end -->
-
-     <!--           <div class="columns portfolio-item">
-                  <div class="item-wrap">
-
-                     <a href="#modal-04" title="">
-                        <img alt="" src="images/portfolio/into-the-light.jpg">
-                        <div class="overlay">
-                           <div class="portfolio-item-meta">
-          					      <h5>Into The Light</h5>
-                              <p>Photography</p>
-          					   </div>
-                        </div>
-                        <div class="link-icon"><i class="icon-plus"></i></div>
-                     </a>
-
-                  </div>
-          		</div> <!-- item end -->
-
-          <!--      <div class="columns portfolio-item">
-                  <div class="item-wrap">
-
-                     <a href="#modal-05" title="">
-                        <img alt="" src="images/portfolio/farmerboy.jpg">
-                        <div class="overlay">
-                           <div class="portfolio-item-meta">
-          					      <h5>Farmer Boy</h5>
-                              <p>Branding</p>
-          					   </div>
-                        </div>
-                        <div class="link-icon"><i class="icon-plus"></i></div>
-                     </a>
-
-                  </div>
-          		</div> <!-- item end -->
-
-               <!-- <div class="columns portfolio-item">
-                  <div class="item-wrap">
-
-                     <a href="#modal-06" title="">
-                        <img alt="" src="images/portfolio/girl.jpg">
-                        <div class="overlay">
-                           <div class="portfolio-item-meta">
-          					      <h5>Girl</h5>
-                              <p>Photography</p>
-          					   </div>
-                        </div>
-                        <div class="link-icon"><i class="icon-plus"></i></div>
-                     </a>
-
-                  </div>
-          		</div> <!-- item end -->
-
-               <!-- <div class="columns portfolio-item">
-                  <div class="item-wrap">
-
-                     <a href="#modal-07" title="">
-                        <img alt="" src="images/portfolio/origami.jpg">
-                        <div class="overlay">
-                           <div class="portfolio-item-meta">
-          					      <h5>Origami</h5>
-                              <p>Illustrration</p>
-          					   </div>
-                        </div>
-                        <div class="link-icon"><i class="icon-plus"></i></div>
-                     </a>
-
-                  </div>
-          		</div> <!-- item end -->
-<!-- 
-               <div class="columns portfolio-item">
-                  <div class="item-wrap">
-
-                     <a href="#modal-08" title="">
-                        <img alt="" src="images/portfolio/retrocam.jpg">
-                        <div class="overlay">
-                           <div class="portfolio-item-meta">
-          					      <h5>Retrocam</h5>
-                              <p>Web Development</p>
-          					   </div>
-                        </div>
-                        <div class="link-icon"><i class="icon-plus"></i></div>
-                     </a>
-
-                  </div>
-          		</div>  <!-- item end -->
-
-            <!-- </div> --> <!-- portfolio-wrapper end -->
-
-         <!-- </div> --> <!-- twelve columns end -->
-
-
-         <!-- Modal Popup
-	      --------------------------------------------------------------- -->
-
-   <!--       <div id="modal-01" class="popup-modal mfp-hide">
-
-		      <img class="scale-with-grid" src="images/portfolio/modals/m-coffee.jpg" alt="" />
-
-		      <div class="description-box">
-			      <h4>Coffee Cup</h4>
-			      <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
-               <span class="categories"><i class="fa fa-tag"></i>Branding, Webdesign</span>
-		      </div>
-
-            <div class="link-box">
-               <a href="http://www.behance.net">Details</a>
-		         <a class="popup-modal-dismiss">Close</a>
+                </div>
+              
+              </div>
             </div>
-
-	      </div><!-- modal-01 End -->
-
-        <!--  <div id="modal-02" class="popup-modal mfp-hide">
-
-		      <img class="scale-with-grid" src="images/portfolio/modals/m-console.jpg" alt="" />
-
-		      <div class="description-box">
-			      <h4>Console</h4>
-			      <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
-               <span class="categories"><i class="fa fa-tag"></i>Branding, Web Development</span>
-		      </div>
-
-            <div class="link-box">
-               <a href="http://www.behance.net">Details</a>
-		         <a class="popup-modal-dismiss">Close</a>
+            <div class="modal-header" align="center">
+              <button type="button" class="btn btn-primary" aria-label="Visit"><span aria-hidden="true"><a href="https://github.com/sahushivam/discussionforum" target="_blank" style="color: white">Visit here</a></span></button>
             </div>
-
-	      </div><!-- modal-02 End -->
-
-         <!-- <div id="modal-03" class="popup-modal mfp-hide">
-
-		      <img class="scale-with-grid" src="images/portfolio/modals/m-judah.jpg" alt="" />
-
-		      <div class="description-box">
-			      <h4>Judah</h4>
-			      <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
-               <span class="categories"><i class="fa fa-tag"></i>Branding</span>
-		      </div> -->
-            <<!-- div class="link-box">
-               <a href="http://www.behance.net">Details</a>
-		         <a class="popup-modal-dismiss">Close</a>
-            </div>
-
-	      </div> --><!-- modal-03 End -->
-
-         <!-- <div id="modal-04" class="popup-modal mfp-hide">
-
-		      <img class="scale-with-grid" src="images/portfolio/modals/m-intothelight.jpg" alt="" />
-
-		      <div class="description-box">
-			      <h4>Into the Light</h4>
-			      <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
-               <span class="categories"><i class="fa fa-tag"></i>Photography</span>
-		      </div>
-
-            <div class="link-box">
-               <a href="http://www.behance.net">Details</a>
-		         <a class="popup-modal-dismiss">Close</a>
-            </div>
-
-	      </div> --><!-- modal-04 End -->
-
-         <!-- <div id="modal-05" class="popup-modal mfp-hide">
-
-		      <img class="scale-with-grid" src="images/portfolio/modals/m-farmerboy.jpg" alt="" />
-
-		      <div class="description-box">
-			      <h4>Farmer Boy</h4>
-			      <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
-               <span class="categories"><i class="fa fa-tag"></i>Branding, Webdesign</span>
-		      </div>
-
-            <div class="link-box">
-               <a href="http://www.behance.net">Details</a>
-		         <a class="popup-modal-dismiss">Close</a>
-            </div>
-
-	      </div> --><!-- modal-05 End -->
-
-         <!-- <div id="modal-06" class="popup-modal mfp-hide">
-
-		      <img class="scale-with-grid" src="images/portfolio/modals/m-girl.jpg" alt="" />
-
-		      <div class="description-box">
-			      <h4>Girl</h4>
-			      <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
-               <span class="categories"><i class="fa fa-tag"></i>Photography</span>
-		      </div>
-
-            <div class="link-box">
-               <a href="http://www.behance.net">Details</a>
-		         <a class="popup-modal-dismiss">Close</a>
-            </div>
-
-	      </div> --><!-- modal-06 End -->
-
-         <!-- <div id="modal-07" class="popup-modal mfp-hide">
-
-		      <img class="scale-with-grid" src="images/portfolio/modals/m-origami.jpg" alt="" />
-
-		      <div class="description-box">
-			      <h4>Origami</h4>
-			      <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
-               <span class="categories"><i class="fa fa-tag"></i>Branding, Illustration</span>
-		      </div>
-
-            <div class="link-box">
-               <a href="http://www.behance.net">Details</a>
-		         <a class="popup-modal-dismiss">Close</a>
-            </div>
-
-	      </div> --><!-- modal-07 End -->
-
-         <!-- <div id="modal-08" class="popup-modal mfp-hide">
-
-		      <img class="scale-with-grid" src="images/portfolio/modals/m-retrocam.jpg" alt="" />
-
-		      <div class="description-box">
-			      <h4>Retrocam</h4>
-			      <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
-               <span class="categories"><i class="fa fa-tag"></i>Webdesign, Photography</span>
-		      </div>
-
-            <div class="link-box">
-               <a href="http://www.behance.net">Details</a>
-		         <a class="popup-modal-dismiss">Close</a>
-            </div>
-
-	      </div> --><!-- modal-01 End -->
-
-
-      <!-- </div> --> <!-- row End -->
-
-   <!-- </section> --> <!-- Portfolio Section End-->
-
-
-   <!-- Call-To-Action Section
-   ================================================== -->
-   <!-- <section id="call-to-action">
-
-      <div class="row">
-
-         <div class="two columns header-col">
-
-            <h1><span>Get Hosting.</span></h1>
-
-         </div>
-
-         <div class="seven columns">
-
-            <h2><a href="http://www.dreamhost.com/r.cgi?287326|STYLESHOUT">Host This Template on Dreamhost.</a></h2>
-            <p>Looking for an awesome and reliable webhosting? Try <a href="http://www.dreamhost.com/r.cgi?287326|STYLESHOUT"><span>DreamHost</span></a>.
-					Get <span>$50 off</span> when you sign up with the promocode <span>STYLESHOUT</span>.  -->
-					<!-- Simply type	the promocode in the box labeled “Promo Code” when placing your order. --></p>
-
-         <!-- </div>
-
-         <div class="three columns action">
-
-            <a href="http://www.dreamhost.com/r.cgi?287326|STYLESHOUT" class="button">Sign Up Now</a>
-
-         </div>
-
+          </div>
+        </div>
       </div>
-
-   </section> --> <!-- Call-To-Action Section End-->
-
-
-   <!-- Testimonials Section
-   ================================================== -->
-   <!-- <section id="testimonials">
-
-      <div class="text-container">
-
-         <div class="row">
-
-            <div class="two columns header-col">
-
-               <h1><span>Client Testimonials</span></h1>
+      <div class="modal ab fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog about" role="document">
+          <div class="modal-content about">
+            <div class="modal-header">
+              <button type="button" class="close ab" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            </div>
+            <div class="modal-body about">
+              <div class="about">
+                
+                <div class="about-inner">
+                  
+                  <!-- <img src="images/jobster.png" class="modalImage" alt="about"/> -->
+                  <h4 class="tittle">T&P WEBSITE</h4>
+                  <p style="padding-left: 10%; padding-right: 10%" align="justify">Built using the HTML,CSS,Javascipt as front-end language and PHP and MySQL as backend, this project was made for academic purpose.</p>
+                </div>
+              
+              </div>
+            </div>
+            <div class="modal-header" align="center">
+              <button type="button" class="btn btn-primary" aria-label="Visit"><span aria-hidden="true"><a href="https://github.com/sahushivam/training-and-placement-website" target="_blank" style="color: white">Visit here</a></span></button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal ab fade" id="myModal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog about" role="document">
+          <div class="modal-content about">
+            <div class="modal-header">
+              <button type="button" class="close ab" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            </div>
+            <div class="modal-body about">
+              <div class="about">
+                
+                <div class="about-inner">
+                  
+                  <!-- <img src="images/oorja.png" class="modalImage" alt="about"/> -->
+                  <h4 class="tittle">NETWORKED TIC-TAC-TOE</h4>
+                  <p style="padding-left: 10%; padding-right: 10%" align="justify">A multi-threaded and network-based implementation of the classic two-player tic-tac-toe game using Java. It make use of socket programming in Java.</p>
+                
+                </div>
+              
+              </div>
+            </div>
+            <div class="modal-header" align="center">
+              <button type="button" class="btn btn-primary" aria-label="Visit"><!-- <span aria-hidden="true"><a href="" target="_blank" style="color: white">Visit here</a></span></button> -->
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal ab fade" id="myModal4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog about" role="document">
+          <div class="modal-content about">
+            <div class="modal-header">
+              <button type="button" class="close ab" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            </div>
+            <div class="modal-body about">
+              <div class="about">
+                
+                <div class="about-inner">
+                  
+                  <!-- <img src="images/bumba.png" class="modalImage" alt="about"/> -->
+                  <h4 class="tittle">MUSIC PLAYER AND PUZZLE GAME</h4>
+                  <p style="padding-left: 10%; padding-right: 10%" align="justify">Music Player and Puzzle Game Android App.
+                    <br> Made using Java and XML.</p>
+                </div>
+              
+              </div>
+            </div>
+            <div class="modal-header" align="center">
+              <button type="button" class="btn btn-primary" aria-label="Visit"><!-- <span aria-hidden="true"><a href="#" target="_blank" style="color: white">Visit here</a></span></button> -->
 
             </div>
-
-            <div class="ten columns flex-container">
-
-               <div class="flexslider">
-
-                  <ul class="slides">
-
-                     <li>
-                        <blockquote>
-                           <p>Your work is going to fill a large part of your life, and the only way to be truly satisfied is
-                           to do what you believe is great work. And the only way to do great work is to love what you do.
-                           If you haven't found it yet, keep looking. Don't settle. As with all matters of the heart, you'll know when you find it.
-                           </p>
-                           <cite>Steve Jobs</cite>
-                        </blockquote>
-                     </li> --> <!-- slide ends -->
-
-                     <!-- <li>
-                        <blockquote>
-                           <p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet.
-                           Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem
-                           nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris.
-                           </p>
-                           <cite>Mr. Adobe</cite>
-                        </blockquote>
-                     </li> <!-- slide ends -->
-
-                  <!-- </ul>
-
-               </div> --> --> <!-- div.flexslider ends -->
-
-             <!-- footer
-   ================================================== -->
-   <footer>
-
-      <div class="row">
-
-         <div class="twelve columns">
-
-            <ul class="social-links">
-               <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-               <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-               <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-               <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-               <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-               <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
-               <li><a href="#"><i class="fa fa-skype"></i></a></li>
-            </ul>
-
-            <ul class="copyright">
-               <li>&copy; Copyright 2018 Shivam Sahu</li>
-            </ul>
-
-         </div>
-
-         <!-- <div id="go-top"><a class="smoothscroll" title="Back to Top" href="#home"><i class="icon-up-open"></i></a></div> -->
-
+          </div>
+        </div>
       </div>
+      <div class="modal ab fade" id="myModal5" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog about" role="document">
+          <div class="modal-content about">
+            <div class="modal-header">
+              <button type="button" class="close ab" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            </div>
+            <div class="modal-body about">
+              <div class="about">
+                
+                <div class="about-inner">
+                  
+                  <!-- <img src="images/tyt.png" class="modalImage" alt="about"/> -->
+                  <h4 class="tittle">KEYLOGGER</h4>
+                  <p style="padding-left: 10%; padding-right: 10%" align="justify">Keylogger made in C++. Implemented on basis of OOPs concept.</p>
+                </div>
+              
+              </div>
+            </div>
+            <div class="modal-header" align="center">
+              <button type="button" class="btn btn-primary" aria-label="Visit"><span aria-hidden="true"><a href="https://github.com/shikhar-scs/Track-Your-Tabs" target="_blank" style="color: white">Visit here</a></span></button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal ab fade" id="myModal6" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog about" role="document">
+          <div class="modal-content about">
+            <div class="modal-header">
+              <button type="button" class="close ab" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            </div>
+            <div class="modal-body about">
+              <div class="about">
+                
+                
+              
+              </div>
+            </div>
+            <div class="modal-header" align="center">
+              <button type="button" class="btn btn-primary" aria-label="Visit"><span aria-hidden="true"><a href="https://github.com/shikhar-scs/oopsproject" target="_blank" style="color: white">Visit here</a></span></button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal ab fade" id="myModal7" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog about" role="document">
+          <div class="modal-content about">
+            <div class="modal-header">
+              <button type="button" class="close ab" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            </div>
+            <div class="modal-body about">
+              <div class="about">
+                
+                
+              
+              </div>
+            </div>
+            <div class="modal-header" align="center">
+              <button type="button" class="btn btn-primary" aria-label="Visit"><span aria-hidden="true"><a href="https://shikhar-scs.github.io/thisisit/" target="_blank" style="color: white">Visit here</a></span></button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal ab fade" id="myModal8" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog about" role="document">
+          <div class="modal-content about">
+            <div class="modal-header">
+              <button type="button" class="close ab" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            </div>
+            <div class="modal-body about">
+              <div class="about">
+                
+                
+              
+              </div>
+            </div>
+            <div class="modal-header" align="center">
+              <button type="button" class="btn btn-primary" aria-label="Visit"><span aria-hidden="true"><a href="https://crescendo-nsitthon.bitballoon.com/" target="_blank" style="color: white">Visit here</a></span></button>
 
-   </footer> <!-- Footer End-->
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal ab fade" id="myModal9" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog about" role="document">
+          <div class="modal-content about">
+            <div class="modal-header">
+              <button type="button" class="close ab" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            </div>
+            <div class="modal-body about">
+              <div class="about">
+                
+                <div class="about-inner">
+                  
+                  <!-- <img src="images/youtube.png" class="modalImage" alt="about"/> -->
+                  <h4 class="tittle">WEB CRAWLER</h4>
+                  <p style="padding-left: 10%; padding-right: 10%" align="justify">Web Crawler made using Python and Beautiful Soup.</p>
+                </div>
+              
+              </div>
+            </div>
+            <div class="modal-header" align="center">
+              <button type="button" class="btn btn-primary" aria-label="Visit"><!-- <span aria-hidden="true"><a href="#" target="_blank" style="color: white">Visit here</a></span></button> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    
+    
+      <!--eductaion and interns-->
+      <div id="work" class="work">
+      <div class="container">
+        <div class="service-head text-center">
+          <h4>WHAT I DID</h4>
+          <h3>MY <span>EDUCATION</span></h3>
+          <span class="border one"></span>
+        </div>
+        <div class="time-main w3l-agile">
+          <div class="col-md-6 year-info">
+            <ul class="year">
+              <li>2020</li>
+              
+              <li>2016</li>
+              <div class="clearfix"></div>
+            </ul>
+          </div>
+          <ul class="col-md-6 timeline">
+            <li>
+              <div class="timeline-badge info"><i class="glyphicon glyphicon-briefcase"></i></div>
+              <div class="timeline-panel">
+                <div class="timeline-heading">
+                  <h4 class="timeline-title">Madan Mohan Malaviya University of Technology, Gorakhpur</h4>
+                </div>
+                <div class="timeline-body">
+                  <p>Bachelor Of Technology : Computer Science & Engineering
+                    </p>
+                </div>
+              </div>
+            </li>
+            
+            <li>
+              <div class="timeline-badge primary"><i class="glyphicon glyphicon-briefcase"></i></div>
+              <div class="timeline-panel">
+                <div class="timeline-heading">
+                  <h4 class="timeline-title">St. John's School, Jaunpur</h4>
+                </div>
+                <div class="timeline-body">
+                  <p>  Schooling: LKG - XII  </p>
+                </div>
+              </div>
+            </li>
 
-   <!-- Java Script
-   ================================================== -->
-   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-   <script>window.jQuery || document.write('<script src="js/jquery-1.10.2.min.js"><\/script>')</script>
-   <script type="text/javascript" src="js/jquery-migrate-1.2.1.min.js"></script>
 
-   <script src="js/jquery.flexslider.js"></script>
-   <script src="js/waypoints.js"></script>
-   <script src="js/jquery.fittext.js"></script>
-   <script src="js/magnific-popup.js"></script>
-   <script src="js/init.js"></script>
 
-</body>
+          </ul>
+          <div class="clearfix"></div>
+        </div>
+        <span class="border one"></span><br><br><br>
 
+        <div class="service-head text-center">
+          <h4>WORK</h4>
+
+          <h3>WORK<span> EXPERIENCE</span></h3>
+          <span class="border one"></span>
+          <div class="time-main w3l-agile">
+            <div class="col-md-6 year-info">
+              <ul class="year">
+                <li>2018-2019</li>
+                <div class="clearfix"></div>
+              </ul>
+            </div>
+            <ul class="col-md-6 timeline">
+              <li>
+                <div class="timeline-badge info"><i class="glyphicon glyphicon-briefcase"></i></div>
+                <div class="timeline-panel">
+                  
+                  <div class="timeline-body">
+                    <h3 align="left"><b>Olcademy</b></h3>
+                    <p align="left">April - July '18</p>
+                    <p align="left">Web Developer Intern</p>
+                    <p align="left">Virtual</p>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="timeline-badge info"><i class="glyphicon glyphicon-briefcase"></i></div>
+                <div class="timeline-panel">
+                  
+                  <div class="timeline-body">
+                    <h3 align="left"><b>Smart HealthZone Pvt. Ltd.</b></h3>
+                    <p align="left">May- July '18</p>
+                    <p align="left">Web Developer Intern</p>
+                    <p align="left">Gorakhpur</p>
+                  </div>
+                </div>
+              </li>
+              
+            </ul>
+            <div class="clearfix"></div>
+          </div>
+          
+          <span class="border one"></span>
+        </div>
+      
+      </div>
+    </div>
+    
+      <!--gh activity-->
+      <div id="services" class="services">
+        <div class="container">
+          <div class="service-head one text-center ">
+            <h4>WHAT I DO</h4>
+            <h3>MY <span>Github Activity</span></h3>
+            <span class="border two"></span>
+          </div>
+          <!-- services-grids -->
+          
+          <div class="calendar contributions">
+            <!-- Loading stuff -->
+            <h3>Loading the data just for you. <i class="fa fa-smile-o"></i></h3>
+          </div>
+          <!-- services-grids -->
+        </div>
+      </div>
+      
+      <!--contributions calendar-->
+      <div class="portfolio" id="port">
+        <div class="service-head text-center">
+            <h4>My Coding Journey</h4>
+            <h3>Coding &nbsp;<span>Profile On</span></h3>
+            <span class="border"></span>
+          </div>
+      <div class="portfolio-grids">
+        <script src="js/easyResponsiveTabs.js" type="text/javascript"></script>
+        <script type="text/javascript">
+                  $(document).ready(function () {
+                    $('#horizontalTab').easyResponsiveTabs({
+                      type: 'default', //Types: default, vertical, accordion
+                      width: 'auto', //auto or any width like 600px
+                      fit: true   // 100% fit in a container
+                    });
+                  });
+                  
+        </script>
+        <div class="sap_tabs">
+          <div id="horizontalTab" style="display: block; width: 100%; margin: 0px;">
+            <ul class="resp-tabs-list">
+              <a href="https://hackerrank.com/sahushivam"> <li class="resp-tab-item" aria-controls="tab_item-1" role="tab"><span>HACKERRANK</span></li></a>
+              <a href="https://www.codechef.com/users/sahushivam"><li class="resp-tab-item" aria-controls="tab_item-2" role="tab"><span>CODECHEF</span></li></a>
+              <a href="https://codeforces.com/profile/sahushivam"><li class="resp-tab-item" aria-controls="tab_item-3" role="tab"><span>CODEFORCES</span></li></a>
+              <a href="https://www.spoj.com/users/malviyanshivam/"><li class="resp-tab-item" aria-controls="tab_item-3" role="tab"><span>SPOJ</span></li></a>
+              <a href="https://atcoder.jp/users/sahushivam"><li class="resp-tab-item" aria-controls="tab_item-3" role="tab"><span>ATCODER</span></li></a>
+              <a href="https://www.interviewbit.com/profile/sahushivam"><li class="resp-tab-item" aria-controls="tab_item-3" role="tab"><span>INTERVIEW BIT</span></li></a>
+            </ul>
+            <div class="resp-tabs-container">
+              <div class="clearfix"></div>
+            </div><div class="resp-tabs-container">
+            <div class="clearfix"></div>
+          </div><div class="resp-tabs-container">
+            <div class="clearfix"></div>
+          </div><div class="resp-tabs-container">
+            <div class="clearfix"></div>
+          </div>
+          </div>
+        </div>
+      </div>
+  
+  
+  <div class="service-head text-center">
+    <h4>MY SKILLS</h4>
+    <h3><span>SKILLS</span></h3>
+    <span class="border"></span>
+  </div>
+  <div class="portfolio-grids">
+    <script src="js/easyResponsiveTabs.js" type="text/javascript"></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $('#horizontalTab2').easyResponsiveTabs({
+          type: 'default', //Types: default, vertical, accordion
+          width: 'auto', //auto or any width like 600px
+          fit: true   // 100% fit in a container
+        });
+      });
+    
+    </script>
+    <div class="sap_tabs">
+      <div id="horizontalTab2" style="display: block; width: 100%; margin: 0px;">
+        <ul class="resp-tabs-list">
+          <li class="resp-tab-item" aria-controls="tab_item-1" role="tab"><span>Django</span></li>
+          <li class="resp-tab-item" aria-controls="tab_item-2" role="tab"><span>MySQL</span></li>
+          <li class="resp-tab-item" aria-controls="tab_item-3" role="tab"><span>JavaScript</span></li>
+          <li class="resp-tab-item" aria-controls="tab_item-3" role="tab"><span>HTML</span></li>
+          <li class="resp-tab-item" aria-controls="tab_item-3" role="tab"><span>CSS</span></li>
+          <li class="resp-tab-item" aria-controls="tab_item-3" role="tab"><span>jQuery</span></li>
+          <li class="resp-tab-item" aria-controls="tab_item-3" role="tab"><span>BootStrap</span></li>
+          <li class="resp-tab-item" aria-controls="tab_item-3" role="tab"><span>OOP</span></li>
+          <li class="resp-tab-item" aria-controls="tab_item-3" role="tab"><span>Linux</span></li>
+          <li class="resp-tab-item" aria-controls="tab_item-3" role="tab"><span>Git/VCS</span></li>
+          <li class="resp-tab-item" aria-controls="tab_item-3" role="tab"><span>DS/Algo</span></li>
+        </ul>
+        <div class="resp-tabs-container">
+          <div class="clearfix"></div>
+        </div><div class="resp-tabs-container">
+        <div class="clearfix"></div>
+      </div><div class="resp-tabs-container">
+        <div class="clearfix"></div>
+      </div><div class="resp-tabs-container">
+        <div class="clearfix"></div>
+      </div>
+      </div>
+    </div>
+  </div>
+  
+  
+  </div>
+      
+    
+      <!--timeline log-->
+      <div class="footer" id="ghTimeline">
+      <div class="container">
+        <div class="service-head one text-center">
+          <h4>GITHUB FEED</h4>
+          <h3>WHAT <span>WHERE & WHEN</span></h3>
+          <span class="border two"></span>
+        </div>
+        <div id="feed">
+        
+        </div>
+      </div>
+    </div>
+
+      <!--contact-->
+      <div class="footer" id="contact">
+  <div class="container">
+  <div class="service-head one text-center">
+            <h4>CONTACT ME</h4>
+            <h3>GET <span>IN TOUCH </span></h3>
+            <span class="border two"></span>
+          </div>
+    <div class="mail_us">
+      <div class=" col-md-12 mail_left">
+        <div class="contact-grid1-left">
+          <div class="contact-grid1-left1">
+            <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>
+            <h4>Contact By Email</h4>
+            <ul>
+              <li>Mail1: <a href="mailto:sahushivam25@gmail.com">sahushivam25@gmail.com</a></li>
+              <li>Mail2: <a href="mailto:malaviyanshivam@gmail.com">malaviyanshivam@gmail.com</a></li>
+            </ul>
+          </div>
+        </div>
+          <div class="contact-grid1-left">
+            <div class="contact-grid1-left1">
+              <span class="glyphicon glyphicon-earphone" aria-hidden="true"></span>
+              <h4>Contact By Phone</h4>
+              <ul>
+                <li>Phone: +91 9453 866 848</li>
+                
+              </ul>
+            </div>
+          </div>
+          <div class="contact-grid1-left">
+            <div class="contact-grid1-left1">
+              <span class="glyphicon glyphicon-home" aria-hidden="true"></span>
+              <h4>Looking For Address</h4>
+              <ul>
+                <li>Gorakhpur, India</li>
+              </ul>
+            </div>
+          </div>
+        <div class="clearfix"> </div>
+      </div>
+      <!--<div class="col-md-6 mail_right">
+        <form action="#" method="post">
+          <input type="text" name="Name" value="Name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Name';}" required="">
+          <input type="email" name="Email" value="Email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email';}" required="">
+          <input type="text" name="Mobile number" value="Mobile number" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Mobile number';}" required="">
+          <textarea name="Message..." onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Message...';}" required="">Message...</textarea>
+          <input type="submit" value="Send">
+          
+        </form>
+      </div>
+      --><div class="clearfix"></div>
+    </div>
+    
+  </div>
+</div>
+    
+      <a href="#home" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+
+    <!--start-smooth-scrolling-->
+    <script type="text/javascript">
+      $(document).ready(function() {
+        
+        $().UItoTop({ easingType: 'easeOutQuart' });
+        
+      });
+    </script>
+        <!--end-smooth-scrolling-->
+  
+    <!-- //for bootstrap working -->
+  <script src="js/bootstrap.js"></script>
+    
+    
+    <!-- Activity Plugin -->
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/mustache.js/0.7.2/mustache.min.js"></script>
+    <script type="text/javascript" src="./js/github-activity-0.1.4.min.js"></script>
+    <script>GitHubActivity.feed({ username: "sahushivam", selector: "#feed" });</script>
+    
+    <!--Calendar Plugin-->
+    <script src="./js/github-calendar.min.js"></script>
+    
+    <script>GitHubCalendar(".calendar", "sahushivam");</script>
+    <script> // removes the new activity feature
+            setTimeout(function(){
+                    $("#user-activity-overview").hide()
+                }
+                ,7500)
+    </script>
+    <script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
+  </body>
 </html>
