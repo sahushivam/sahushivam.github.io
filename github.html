@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	
+</head>
+<body>
+	<center>
+	<div style="width: 50%;">
+	<script
+  src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"
+></script>
+
+<!-- Optionally, include the theme (if you don't want to struggle to write the CSS) -->
+<link
+   rel="stylesheet"
+   href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css"
+/>
+
+<!-- Prepare a container for your calendar. -->
+<div class="calendar" style="display: none;">
+    <!-- Loading stuff -->
+</div>
+
+<script>
+    GitHubCalendar(".calendar", "sahushivam");
+    // or enable responsive functionality
+    GitHubCalendar(".calendar", "sahushivam", { responsive: true });
+</script>
+    </div>
+</center>
+</body>
+</html>

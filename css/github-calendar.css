@@ -1,5 +1,5 @@
 .calendar {
-    width: 750px;
+    width: 840px;
     font-family: Helvetica, arial;
     border: 1px solid #DDDDDD;
     border-radius: 3px;
@@ -89,7 +89,7 @@
     font-family: monospace;
 }
 
-.monospace a {
+.monospace a {contributions
     color: #1D75AB;
     text-decoration: none;
 }

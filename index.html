@@ -501,7 +501,6 @@
           <div class="col-md-6 year-info">
             <ul class="year">
               <li>2016-2020</li>
-              
               <li>2001-2015</li>
               <div class="clearfix"></div>
             </ul>
@@ -516,6 +515,7 @@
                 <div class="timeline-body">
                   <p>Bachelor Of Technology : Computer Science & Engineering
                     </p>
+                    <p>&nbsp;</p>
                 </div>
               </div>
             </li>
@@ -528,6 +528,7 @@
                 </div>
                 <div class="timeline-body">
                   <p>  Schooling: LKG - XII  </p>
+                    <p>&nbsp;</p>
                 </div>
               </div>
             </li>
@@ -547,13 +548,27 @@
           <div class="time-main w3l-agile">
             <div class="col-md-6 year-info">
               <ul class="year">
-                <li>2018-2019</li>
+                 <li>2019</li>
+                <li>2018</li>
+                <li>2018</li>
                 <div class="clearfix"></div>
               </ul>
             </div>
             <ul class="col-md-6 timeline">
               <li>
                 <div class="timeline-badge info"><i class="glyphicon glyphicon-briefcase"></i></div>
+                <div class="timeline-panel">
+                  
+                  <div class="timeline-body">
+                    <h3 align="left"><b>Inturiyam</b></h3>
+                    <p align="left">May - July '19</p>
+                    <p align="left">Machine Learning Intern</p>
+                    <p align="left">Bangalore</p>
+                  </div>
+                </div>
+              </li>
+              <li>
+              <div class="timeline-badge primary"><i class="glyphicon glyphicon-briefcase"></i></div>
                 <div class="timeline-panel">
                   
                   <div class="timeline-body">
@@ -668,7 +683,7 @@
     <div class="sap_tabs">
       <div id="horizontalTab2" style="display: block; width: 100%; margin: 0px;">
         <ul class="resp-tabs-list">
-          <li class="resp-tab-item" aria-controls="tab_item-1" role="tab"><span>Django</span></li>
+          <li class="resp-tab-item" aria-controls="tab_item-1" role="tab"><span>Flask</span></li>
           <li class="resp-tab-item" aria-controls="tab_item-2" role="tab"><span>MySQL</span></li>
           <li class="resp-tab-item" aria-controls="tab_item-3" role="tab"><span>JavaScript</span></li>
           <li class="resp-tab-item" aria-controls="tab_item-3" role="tab"><span>HTML</span></li>
@@ -785,20 +800,28 @@
     
     
     <!-- Activity Plugin -->
-    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/mustache.js/0.7.2/mustache.min.js"></script>
-    <script type="text/javascript" src="./js/github-activity-0.1.4.min.js"></script>
-    <script>GitHubActivity.feed({ username: "sahushivam", selector: "#feed" });</script>
-    
-    <!--Calendar Plugin-->
-    <script src="./js/github-calendar.min.js"></script>
-    
-    <script>GitHubCalendar(".calendar", "sahushivam");</script>
-    <script> // removes the new activity feature
-            setTimeout(function(){
-                    $("#user-activity-overview").hide()
-                }
-                ,7500)
-    </script>
+    <center>
+  <div style="width: 45%;">
+  <script
+  src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"
+></script>
+
+<!-- Optionally, include the theme (if you don't want to struggle to write the CSS) -->
+<link
+   rel="stylesheet"
+   href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css"
+/>
+
+<!-- Prepare a container for your calendar. -->
+
+
+<script>
+    GitHubCalendar(".calendar", "sahushivam");
+    // or enable responsive functionality
+    GitHubCalendar(".calendar", "sahushivam", { responsive: false });
+</script>
+    </div>
+</center>
     <script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
   </body>
 </html>
