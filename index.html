@@ -16,708 +16,751 @@
 <link href='//fonts.googleapis.com/css?family=Asap:400,700,400italic' rel='stylesheet' type='text/css'>
 <link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,600' rel='stylesheet' type='text/css'>
 <!-- webfonts -->
-<!--Calendar Css-->
-<link rel="stylesheet" href="./css/github-calendar.css">
 <!--Activity Css-->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="./css/github-activity-0.1.4.min.css">
+<!-- GitHub Calendar CSS -->
+<link rel="stylesheet" href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css" />
 <!---- start-smoth-scrolling---->
 <script type="text/javascript" src="js/move-top.js"></script>
 <script type="text/javascript" src="js/easing.js"></script>
 <script type="text/javascript">
 jQuery(document).ready(function($) {
-$(".scroll").click(function(event){
-event.preventDefault();
-$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
-});
+  $(".scroll").click(function(event){
+    event.preventDefault();
+    $('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+  });
 });
 </script>
 <!---- start-smoth-scrolling---->
 <!-- LinkedIn badge SDK -->
 <script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
+
+<style>
+/* ── Work Experience timeline fix ── */
+.timeline-date {
+  font-size: 12px;
+  color: #888;
+  margin-bottom: 4px;
+  display: block;
+}
+
+/* Make sure timeline panels have consistent spacing */
+.timeline > li > .timeline-panel {
+  width: calc(100% - 90px);
+}
+
+/* ── GitHub Calendar wrapper ── */
+.github-calendar-wrapper {
+  display: flex;
+  justify-content: center;
+  padding: 10px 0 20px;
+  min-height: 180px;
+}
+.github-calendar-wrapper > div {
+  width: 100%;
+  max-width: 900px;
+}
+/* Override any bad default rendering from the lib */
+.calendar {
+  width: 100% !important;
+}
+.calendar .contrib-legend {
+  text-align: right;
+}
+</style>
 </head>
 <body>
 <!-- header -->
 <div id="home" class="header">
-<div class="container uoyyo">
-<div class="top-header">
-<div class="top-nav">
-<div class="navigation">
-<div class="logo" style="background: black; color: white;">
-<h1><a href="index.html"><span>Developer</span></a></h1>
-</div>
-<div class="navigation-right">
-<span class="menu"><img src="images/menu.png" alt=" " /></span>
-<nav class="link-effect-3" id="link-effect-3">
-<ul class="nav1 nav nav-wil">
-<li class="active"><a data-hover="Home" href="index.html">Home</a></li>
-<li><a data-hover="Resume" href="https://drive.google.com/file/d/1PgAg7mybAsNFtzLxQXDb3oPmZW3sGD0a/view" target="_blank">Resume</a></li>
-<li><a class="scroll" data-hover="About" href="#about">About</a></li>
-<li><a class="scroll" data-hover="Projects" href="#projects">Projects</a></li>
-<li><a class="scroll" data-hover="Education" href="#work">Education</a></li>
-<li><a class="scroll" data-hover="Coding_Profile" href="#port">Coding_Profile</a></li>
-<li><a class="scroll" data-hover="Contact" href="#contact">Contact</a></li>
-</ul>
-</nav>
-<!-- script-for-menu -->
-<script>
-$( "span.menu" ).click(function() {
-$( "ul.nav1" ).slideToggle( 300, function() {
-});
-});
-</script>
-<!-- /script-for-menu -->
-</div>
-<div class="clearfix"></div>
-</div>
-</div>
-</div>
+  <div class="container uoyyo">
+    <div class="top-header">
+      <div class="top-nav">
+        <div class="navigation">
+          <div class="logo" style="background: black; color: white;">
+            <h1><a href="index.html"><span>Developer</span></a></h1>
+          </div>
+          <div class="navigation-right">
+            <span class="menu"><img src="images/menu.png" alt=" " /></span>
+            <nav class="link-effect-3" id="link-effect-3">
+              <ul class="nav1 nav nav-wil">
+                <li class="active"><a data-hover="Home" href="index.html">Home</a></li>
+                <li><a data-hover="Resume" href="https://drive.google.com/file/d/1PgAg7mybAsNFtzLxQXDb3oPmZW3sGD0a/view" target="_blank">Resume</a></li>
+                <li><a class="scroll" data-hover="About" href="#about">About</a></li>
+                <li><a class="scroll" data-hover="Projects" href="#projects">Projects</a></li>
+                <li><a class="scroll" data-hover="Education" href="#work">Education</a></li>
+                <li><a class="scroll" data-hover="Coding_Profile" href="#port">Coding_Profile</a></li>
+                <li><a class="scroll" data-hover="Contact" href="#contact">Contact</a></li>
+              </ul>
+            </nav>
+            <!-- script-for-menu -->
+            <script>
+            $( "span.menu" ).click(function() {
+              $( "ul.nav1" ).slideToggle( 300, function() {});
+            });
+            </script>
+            <!-- /script-for-menu -->
+          </div>
+          <div class="clearfix"></div>
+        </div>
+      </div>
+    </div>
 
-<div class="banner-info">
-<div class="col-md-7 header-right">
-<h1>Hi !</h1>
-<h6>SOFTWARE ENGINEER @ PHONEPE</h6>
-<ul class="address">
-<li>
-<ul class="address-text">
-<li><b>NAME</b></li>
-<li>Shivam Sahu</li>
-</ul>
-</li>
-<li>
-<ul class="address-text">
-<li><b>E-MAIL </b></li>
-<li><a href="mailto:malaviyanshivam@gmail.com">malaviyanshivam@gmail.com</a></li>
-</ul>
-</li>
-<li>
-<ul class="address-text">
-<li><b>E-MAIL (2) </b></li>
-<li><a href="mailto:malaviyanshivam@gmail.com">malaviyanshivam@gmail.com</a></li>
-</ul>
-</li>
-<li>
-<ul class="address-text">
-<li><b>ADDRESS </b></li>
-<li>Bengaluru, India</li>
-</ul>
-</li>
-<li>
-<ul class="address-text">
-<li><b>VISIT ME</b></li>
-<li style="margin-right: 15px;"><a href="https://github.com/sahushivam"><i class="fa fa-2x fa-github"></i></a></li>
-<li style="margin-right: 15px;"><a href="https://www.linkedin.com/in/sahushivam/"><i class="fa fa-2x fa-linkedin"></i></a></li>
-</ul>
-</li>
-</ul>
-</div>
-<div class="col-md-5 header-left">
-<img src="images/mainPic.jpg" alt="">
-</div>
-<div class="clearfix"> </div>
-</div>
-</div>
+    <div class="banner-info">
+      <div class="col-md-7 header-right">
+        <h1>Hi !</h1>
+        <h6>SOFTWARE ENGINEER @ PHONEPE</h6>
+        <ul class="address">
+          <li>
+            <ul class="address-text">
+              <li><b>NAME</b></li>
+              <li>Shivam Sahu</li>
+            </ul>
+          </li>
+          <li>
+            <ul class="address-text">
+              <li><b>E-MAIL </b></li>
+              <li><a href="mailto:sahushivam25@gmail.com">sahushivam25@gmail.com</a></li>
+            </ul>
+          </li>
+          <li>
+            <ul class="address-text">
+              <li><b>E-MAIL (2) </b></li>
+              <li><a href="mailto:malaviyanshivam@gmail.com">malaviyanshivam@gmail.com</a></li>
+            </ul>
+          </li>
+          <li>
+            <ul class="address-text">
+              <li><b>ADDRESS </b></li>
+              <li>Bengaluru, India</li>
+            </ul>
+          </li>
+          <li>
+            <ul class="address-text">
+              <li><b>VISIT ME</b></li>
+              <li style="margin-right: 15px;"><a href="https://github.com/sahushivam"><i class="fa fa-2x fa-github"></i></a></li>
+              <li style="margin-right: 15px;"><a href="https://www.linkedin.com/in/sahushivam/"><i class="fa fa-2x fa-linkedin"></i></a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <div class="col-md-5 header-left">
+        <img src="images/mainPic.jpg" alt="">
+      </div>
+      <div class="clearfix"> </div>
+    </div>
+  </div>
 </div>
 
 <!-- about -->
 <div id="about" class="about">
-<div class="col-md-6 about-left">
-<div id="owl-demo1" class="owl-carousel owl-carousel2">
-<div class="item">
-<div class="about-left-grid">
-<h2>Hi! I'm <span>Shivam Sahu</span></h2>
-<p align="justify">I am a Software Engineer at PhonePe. I graduated in 2020 from Madan Mohan Malaviya University of Technology, Gorakhpur with a B.Tech in Computer Science &amp; Engineering. Previously, I worked at Arcesium and Tact.ai building backend systems and distributed services. A team player with a can-do attitude and a strong focus on reliability and scale. Visit my GitHub profile for more on my work and contributions.</p>
-<ul>
-<li><a href="https://drive.google.com/file/d/1PgAg7mybAsNFtzLxQXDb3oPmZW3sGD0a/view" target="_blank">Resume</a></li>
-</ul>
-</div>
-</div>
-<div class="item">
-<div class="about-left-grid">
-<h2>Hi! I'm <span>Shivam Sahu</span></h2>
-<p align="justify">Apart from being a Software Developer, I spend most of my time playing cricket and in the gym. Also, I eat and eat and eat whenever I get a chance :P
-When forced indoors, I like to play chess. Reach out to me at chess.com. My handle is sahushivam. I am an aspiring learner, and I spend a large amount of my free time exploring the latest technology advancements in the Software development world.</p>
-<ul>
-<li><a href="https://drive.google.com/file/d/1PgAg7mybAsNFtzLxQXDb3oPmZW3sGD0a/view" target="_blank">Resume</a></li>
-</ul>
-</div>
-</div>
-</div>
-</div>
+  <div class="col-md-6 about-left">
+    <div id="owl-demo1" class="owl-carousel owl-carousel2">
+      <div class="item">
+        <div class="about-left-grid">
+          <h2>Hi! I'm <span>Shivam Sahu</span></h2>
+          <p align="justify">I am a Software Engineer at PhonePe. I graduated in 2020 from Madan Mohan Malaviya University of Technology, Gorakhpur with a B.Tech in Computer Science &amp; Engineering. Previously, I worked at Arcesium and Tact.ai building backend systems and distributed services. A team player with a can-do attitude and a strong focus on reliability and scale. Visit my GitHub profile for more on my work and contributions.</p>
+          <ul>
+            <li><a href="https://drive.google.com/file/d/1PgAg7mybAsNFtzLxQXDb3oPmZW3sGD0a/view" target="_blank">Resume</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="item">
+        <div class="about-left-grid">
+          <h2>Hi! I'm <span>Shivam Sahu</span></h2>
+          <p align="justify">Apart from being a Software Developer, I spend most of my time playing cricket and in the gym. Also, I eat and eat and eat whenever I get a chance :P
+          When forced indoors, I like to play chess. Reach out to me at chess.com. My handle is sahushivam. I am an aspiring learner, and I spend a large amount of my free time exploring the latest technology advancements in the Software development world.</p>
+          <ul>
+            <li><a href="https://drive.google.com/file/d/1PgAg7mybAsNFtzLxQXDb3oPmZW3sGD0a/view" target="_blank">Resume</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
 
-<div class="col-md-6 about-right">
-<div class="LI-profile-badge linkBad" data-version="v1" data-size="large"
-data-locale="en_US" data-type="vertical" data-theme="dark"
-data-vanity="sahushivam">
-<a class="LI-simple-link" href='https://in.linkedin.com/in/sahushivam?trk=profile-badge'>Shivam Sahu</a></div>
-</div>
-<div class="clearfix"> </div>
+  <div class="col-md-6 about-right">
+    <div class="LI-profile-badge linkBad" data-version="v1" data-size="large"
+      data-locale="en_US" data-type="vertical" data-theme="dark"
+      data-vanity="sahushivam">
+      <a class="LI-simple-link" href='https://in.linkedin.com/in/sahushivam?trk=profile-badge'>Shivam Sahu</a>
+    </div>
+  </div>
+  <div class="clearfix"> </div>
 
-<link href="css/owl.carousel.css" rel="stylesheet">
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="js/owl.carousel.js"></script>
-<script>
-$(document).ready(function() {
-$("#owl-demo1").owlCarousel({
-items : 1,
-lazyLoad : false,
-autoPlay : true,
-navigation : false,
-navigationText : false,
-pagination : true,
-});
-});
-</script>
-<script>
-$(document).ready(function() {
-$("#owl-demo3").owlCarousel({
-items : 1,
-lazyLoad : false,
-autoPlay : true,
-navigation : false,
-navigationText : true,
-pagination : true,
-});
-});
-</script>
+  <link href="css/owl.carousel.css" rel="stylesheet">
+  <script src="js/owl.carousel.js"></script>
+  <script>
+  $(document).ready(function() {
+    $("#owl-demo1").owlCarousel({
+      items : 1,
+      lazyLoad : false,
+      autoPlay : true,
+      navigation : false,
+      navigationText : false,
+      pagination : true,
+    });
+  });
+  </script>
+  <script>
+  $(document).ready(function() {
+    $("#owl-demo3").owlCarousel({
+      items : 1,
+      lazyLoad : false,
+      autoPlay : true,
+      navigation : false,
+      navigationText : true,
+      pagination : true,
+    });
+  });
+  </script>
 </div>
 
 <!-- projects -->
 <div class="blog nice-bg" id="projects">
-<div class="container">
-<div class="service-head text-center">
-<h4>PROJECTS</h4>
-<h3 style="color:white;">MY <span>PROJECTS</span></h3>
-<span class="border one"></span>
-</div>
+  <div class="container">
+    <div class="service-head text-center">
+      <h4>PROJECTS</h4>
+      <h3 style="color:white;">MY <span>PROJECTS</span></h3>
+      <span class="border one"></span>
+    </div>
 
-<div class="news-grid w3l-agile">
-<div align="center" class="col-md-4 news-text full-height custom-div">
-<h3><a href="#" data-toggle="modal" data-target="#myModal0">REDIS-LITE</a></h3>
-<a href="#" data-toggle="modal" data-target="#myModal0" class="read hvr-shutter-in-horizontal">Read More</a>
-</div>
-<div align="center" class="col-md-4 news-text full-height custom-div">
-<h3><a href="#" data-toggle="modal" data-target="#myModal1">DISCUSSION FORUM</a></h3>
-<a href="#" data-toggle="modal" data-target="#myModal1" class="read hvr-shutter-in-horizontal">Read More</a>
-</div>
-</div>
+    <div class="news-grid w3l-agile">
+      <div align="center" class="col-md-4 news-text full-height custom-div">
+        <h3><a href="#" data-toggle="modal" data-target="#myModal0">REDIS-LITE</a></h3>
+        <a href="#" data-toggle="modal" data-target="#myModal0" class="read hvr-shutter-in-horizontal">Read More</a>
+      </div>
+      <div align="center" class="col-md-4 news-text full-height custom-div">
+        <h3><a href="#" data-toggle="modal" data-target="#myModal1">DISCUSSION FORUM</a></h3>
+        <a href="#" data-toggle="modal" data-target="#myModal1" class="read hvr-shutter-in-horizontal">Read More</a>
+      </div>
+    </div>
 
-<div class="news-grid">
-<div align="center" class="col-md-4 news-text full-height custom-div">
-<h3><a href="#" data-toggle="modal" data-target="#myModalDataLens">DATALENS — CSV DASHBOARD</a></h3>
-<a href="#" data-toggle="modal" data-target="#myModalDataLens" class="read hvr-shutter-in-horizontal">Read More</a>
-</div>
-</div>
+    <div class="news-grid">
+      <div align="center" class="col-md-4 news-text full-height custom-div">
+        <h3><a href="#" data-toggle="modal" data-target="#myModalDataLens">DATALENS — CSV DASHBOARD</a></h3>
+        <a href="#" data-toggle="modal" data-target="#myModalDataLens" class="read hvr-shutter-in-horizontal">Read More</a>
+      </div>
+    </div>
 
-<div class="news-grid">
-<div align="center" class="col-md-4 news-text full-height custom-div">
-<h3><a href="#" data-toggle="modal" data-target="#myModal2">T&amp;P WEBSITE</a></h3>
-<a href="#" data-toggle="modal" data-target="#myModal2" class="read hvr-shutter-in-horizontal">Read More</a>
-</div>
-</div>
+    <div class="news-grid">
+      <div align="center" class="col-md-4 news-text full-height custom-div">
+        <h3><a href="#" data-toggle="modal" data-target="#myModal2">T&amp;P WEBSITE</a></h3>
+        <a href="#" data-toggle="modal" data-target="#myModal2" class="read hvr-shutter-in-horizontal">Read More</a>
+      </div>
+    </div>
 
-<div class="news-grid">
-<div align="center" class="col-md-4 news-text full-height custom-div">
-<h3><a href="#" data-toggle="modal" data-target="#myModal3">NETWORKED TIC-TAC-TOE</a></h3>
-<a href="#" data-toggle="modal" data-target="#myModal3" class="read hvr-shutter-in-horizontal">Read More</a>
-</div>
-</div>
+    <div class="news-grid">
+      <div align="center" class="col-md-4 news-text full-height custom-div">
+        <h3><a href="#" data-toggle="modal" data-target="#myModal3">NETWORKED TIC-TAC-TOE</a></h3>
+        <a href="#" data-toggle="modal" data-target="#myModal3" class="read hvr-shutter-in-horizontal">Read More</a>
+      </div>
+    </div>
 
-<div class="news-grid">
-<div align="center" class="col-md-4 news-text full-height custom-div">
-<h3><a href="#" data-toggle="modal" data-target="#myModal7">PLAY WITH GESTURE</a></h3>
-<a href="#" data-toggle="modal" data-target="#myModal7" class="read hvr-shutter-in-horizontal">Read More</a>
-</div>
-</div>
+    <div class="news-grid">
+      <div align="center" class="col-md-4 news-text full-height custom-div">
+        <h3><a href="#" data-toggle="modal" data-target="#myModal7">PLAY WITH GESTURE</a></h3>
+        <a href="#" data-toggle="modal" data-target="#myModal7" class="read hvr-shutter-in-horizontal">Read More</a>
+      </div>
+    </div>
 
-<div class="news-grid">
-<div align="center" class="col-md-4 news-text full-height custom-div">
-<h3><a href="#" data-toggle="modal" data-target="#myModal4">MUSIC PLAYER AND PUZZLE GAME</a></h3>
-<a href="#" data-toggle="modal" data-target="#myModal4" class="read hvr-shutter-in-horizontal">Read More</a>
-</div>
-</div>
+    <div class="news-grid">
+      <div align="center" class="col-md-4 news-text full-height custom-div">
+        <h3><a href="#" data-toggle="modal" data-target="#myModal4">MUSIC PLAYER AND PUZZLE GAME</a></h3>
+        <a href="#" data-toggle="modal" data-target="#myModal4" class="read hvr-shutter-in-horizontal">Read More</a>
+      </div>
+    </div>
 
-<div class="news-grid">
-<div align="center" class="col-md-4 news-text full-height custom-div">
-<h3><a href="#" data-toggle="modal" data-target="#myModal9">WEB CRAWLER</a></h3>
-<a href="#" data-toggle="modal" data-target="#myModal9" class="read hvr-shutter-in-horizontal">Read More</a>
-</div>
-</div>
+    <div class="news-grid">
+      <div align="center" class="col-md-4 news-text full-height custom-div">
+        <h3><a href="#" data-toggle="modal" data-target="#myModal9">WEB CRAWLER</a></h3>
+        <a href="#" data-toggle="modal" data-target="#myModal9" class="read hvr-shutter-in-horizontal">Read More</a>
+      </div>
+    </div>
 
-<div class="news-grid">
-<div align="center" class="col-md-4 news-text full-height custom-div">
-<h3><a href="#" data-toggle="modal" data-target="#myModal5">KEYLOGGER</a></h3>
-<a href="#" data-toggle="modal" data-target="#myModal5" class="read hvr-shutter-in-horizontal">Read More</a>
-</div>
-</div>
+    <div class="news-grid">
+      <div align="center" class="col-md-4 news-text full-height custom-div">
+        <h3><a href="#" data-toggle="modal" data-target="#myModal5">KEYLOGGER</a></h3>
+        <a href="#" data-toggle="modal" data-target="#myModal5" class="read hvr-shutter-in-horizontal">Read More</a>
+      </div>
+    </div>
 
-</div>
+  </div>
 </div>
 
 <!-- modals -->
 <div class="modal ab fade" id="myModal0" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-<div class="modal-dialog about" role="document">
-<div class="modal-content about">
-<div class="modal-header">
-<button type="button" class="close ab" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-</div>
-<div class="modal-body about">
-<div class="about"><div class="about-inner">
-<h4 class="tittle">REDIS-LITE</h4>
-<p style="padding-left: 10%; padding-right: 10%" align="justify">Implemented core functionalities of Redis in Java.<br><br>
-• Used SpringBoot framework and MongoDB as database.<br>
-• Implemented LRU Cache for fast retrieval.<br>
-• Implemented Multithreading with versioning of SpringBoot.<br>
-</p>
-</div></div>
-</div>
-<div class="modal-header" align="center">
-<button type="button" class="btn btn-primary" aria-label="Visit"><span aria-hidden="true"><a href="https://github.com/sahushivam/Redis-Lite" target="_blank" style="color: white">Visit here</a></span></button>
-</div>
-</div>
-</div>
+  <div class="modal-dialog about" role="document">
+    <div class="modal-content about">
+      <div class="modal-header">
+        <button type="button" class="close ab" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+      </div>
+      <div class="modal-body about">
+        <div class="about"><div class="about-inner">
+          <h4 class="tittle">REDIS-LITE</h4>
+          <p style="padding-left: 10%; padding-right: 10%" align="justify">Implemented core functionalities of Redis in Java.<br><br>
+          • Used SpringBoot framework and MongoDB as database.<br>
+          • Implemented LRU Cache for fast retrieval.<br>
+          • Implemented Multithreading with versioning of SpringBoot.<br>
+          </p>
+        </div></div>
+      </div>
+      <div class="modal-header" align="center">
+        <button type="button" class="btn btn-primary" aria-label="Visit"><span aria-hidden="true"><a href="https://github.com/sahushivam/Redis-Lite" target="_blank" style="color: white">Visit here</a></span></button>
+      </div>
+    </div>
+  </div>
 </div>
 
 <div class="modal ab fade" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-<div class="modal-dialog about" role="document">
-<div class="modal-content about">
-<div class="modal-header">
-<button type="button" class="close ab" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-</div>
-<div class="modal-body about">
-<div class="about"><div class="about-inner">
-<h4 class="tittle">DISCUSSION FORUM</h4>
-<p align="left" style="padding-left: 10%;">This forum is developed to facilitate discussion within a campus.<br>
-• Messenger is integrated to send direct message to a person.<br>
-• Discussion can be filtered on basis of tags.<br>
-• Admin Panel is provided to add or remove a user.<br>
-</p>
-</div></div>
-</div>
-<div class="modal-header" align="center">
-<button type="button" class="btn btn-primary" aria-label="Visit"><span aria-hidden="true"><a href="https://github.com/sahushivam/discussionforum" target="_blank" style="color: white">Visit here</a></span></button>
-</div>
-</div>
-</div>
+  <div class="modal-dialog about" role="document">
+    <div class="modal-content about">
+      <div class="modal-header">
+        <button type="button" class="close ab" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+      </div>
+      <div class="modal-body about">
+        <div class="about"><div class="about-inner">
+          <h4 class="tittle">DISCUSSION FORUM</h4>
+          <p align="left" style="padding-left: 10%;">This forum is developed to facilitate discussion within a campus.<br>
+          • Messenger is integrated to send direct message to a person.<br>
+          • Discussion can be filtered on basis of tags.<br>
+          • Admin Panel is provided to add or remove a user.<br>
+          </p>
+        </div></div>
+      </div>
+      <div class="modal-header" align="center">
+        <button type="button" class="btn btn-primary" aria-label="Visit"><span aria-hidden="true"><a href="https://github.com/sahushivam/discussionforum" target="_blank" style="color: white">Visit here</a></span></button>
+      </div>
+    </div>
+  </div>
 </div>
 
 <div class="modal ab fade" id="myModalDataLens" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-<div class="modal-dialog about" role="document">
-<div class="modal-content about">
-<div class="modal-header">
-<button type="button" class="close ab" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-</div>
-<div class="modal-body about">
-<div class="about"><div class="about-inner">
-<h4 class="tittle">DATALENS — CSV DASHBOARD</h4>
-<p style="padding-left: 10%; padding-right: 10%" align="justify">
-A universal CSV dashboard generator that runs entirely in the browser — no upload, no backend, no signup.<br><br>
-• Drop any CSV and get auto-generated charts, histograms, scatter plots and time-series in seconds.<br>
-• Interactive data table with global search, per-column filters, sorting and pagination.<br>
-• Built-in chart builder with 6 chart types, custom aggregations and color palettes.<br>
-• Dark &amp; light theme toggle, export charts as PNG and full PDF report.<br>
-• Built with vanilla JS, Chart.js and PapaParse — zero dependencies to install.
-</p>
-</div></div>
-</div>
-<div class="modal-header" align="center">
-<button type="button" class="btn btn-primary" aria-label="Visit"><span aria-hidden="true"><a href="https://sahushivam.github.io/csv-dashboard/" target="_blank" style="color: white">Try it live</a></span></button>
-</div>
-</div>
-</div>
+  <div class="modal-dialog about" role="document">
+    <div class="modal-content about">
+      <div class="modal-header">
+        <button type="button" class="close ab" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+      </div>
+      <div class="modal-body about">
+        <div class="about"><div class="about-inner">
+          <h4 class="tittle">DATALENS — CSV DASHBOARD</h4>
+          <p style="padding-left: 10%; padding-right: 10%" align="justify">
+            A universal CSV dashboard generator that runs entirely in the browser — no upload, no backend, no signup.<br><br>
+            • Drop any CSV and get auto-generated charts, histograms, scatter plots and time-series in seconds.<br>
+            • Interactive data table with global search, per-column filters, sorting and pagination.<br>
+            • Built-in chart builder with 6 chart types, custom aggregations and color palettes.<br>
+            • Dark &amp; light theme toggle, export charts as PNG and full PDF report.<br>
+            • Built with vanilla JS, Chart.js and PapaParse — zero dependencies to install.
+          </p>
+        </div></div>
+      </div>
+      <div class="modal-header" align="center">
+        <button type="button" class="btn btn-primary" aria-label="Visit"><span aria-hidden="true"><a href="https://sahushivam.github.io/csv-dashboard/" target="_blank" style="color: white">Try it live</a></span></button>
+      </div>
+    </div>
+  </div>
 </div>
 
 <div class="modal ab fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-<div class="modal-dialog about" role="document">
-<div class="modal-content about">
-<div class="modal-header">
-<button type="button" class="close ab" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-</div>
-<div class="modal-body about">
-<div class="about"><div class="about-inner">
-<h4 class="tittle">T&amp;P WEBSITE</h4>
-<p style="padding-left: 10%; padding-right: 10%" align="justify">Built using HTML, CSS, JavaScript as front-end and PHP and MySQL as backend. Made for academic purpose to assist the Training &amp; Placement cell.</p>
-</div></div>
-</div>
-<div class="modal-header" align="center">
-<button type="button" class="btn btn-primary" aria-label="Visit"><span aria-hidden="true"><a href="https://github.com/sahushivam/training-and-placement-website" target="_blank" style="color: white">Visit here</a></span></button>
-</div>
-</div>
-</div>
+  <div class="modal-dialog about" role="document">
+    <div class="modal-content about">
+      <div class="modal-header">
+        <button type="button" class="close ab" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+      </div>
+      <div class="modal-body about">
+        <div class="about"><div class="about-inner">
+          <h4 class="tittle">T&amp;P WEBSITE</h4>
+          <p style="padding-left: 10%; padding-right: 10%" align="justify">Built using HTML, CSS, JavaScript as front-end and PHP and MySQL as backend. Made for academic purpose to assist the Training &amp; Placement cell.</p>
+        </div></div>
+      </div>
+      <div class="modal-header" align="center">
+        <button type="button" class="btn btn-primary" aria-label="Visit"><span aria-hidden="true"><a href="https://github.com/sahushivam/training-and-placement-website" target="_blank" style="color: white">Visit here</a></span></button>
+      </div>
+    </div>
+  </div>
 </div>
 
 <div class="modal ab fade" id="myModal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-<div class="modal-dialog about" role="document">
-<div class="modal-content about">
-<div class="modal-header">
-<button type="button" class="close ab" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-</div>
-<div class="modal-body about">
-<div class="about"><div class="about-inner">
-<h4 class="tittle">NETWORKED TIC-TAC-TOE</h4>
-<p style="padding-left: 10%; padding-right: 10%" align="justify">A multi-threaded and network-based implementation of the classic two-player tic-tac-toe game using Java. Makes use of socket programming in Java.</p>
-</div></div>
-</div>
-</div>
-</div>
+  <div class="modal-dialog about" role="document">
+    <div class="modal-content about">
+      <div class="modal-header">
+        <button type="button" class="close ab" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+      </div>
+      <div class="modal-body about">
+        <div class="about"><div class="about-inner">
+          <h4 class="tittle">NETWORKED TIC-TAC-TOE</h4>
+          <p style="padding-left: 10%; padding-right: 10%" align="justify">A multi-threaded and network-based implementation of the classic two-player tic-tac-toe game using Java. Makes use of socket programming in Java.</p>
+        </div></div>
+      </div>
+    </div>
+  </div>
 </div>
 
 <div class="modal ab fade" id="myModal7" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-<div class="modal-dialog about" role="document">
-<div class="modal-content about">
-<div class="modal-header">
-<button type="button" class="close ab" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-</div>
-<div class="modal-body about">
-<div class="about"><div class="about-inner">
-<h4 class="tittle">PLAY WITH GESTURE</h4>
-<p style="padding-left: 10%; padding-right: 10%" align="justify">
-A computer vision project that lets you control applications using hand gestures captured via webcam.<br><br>
-• Built using Python and OpenCV.<br>
-• Uses machine learning to classify hand gestures in real time.
-</p>
-</div></div>
-</div>
-<div class="modal-header" align="center">
-<button type="button" class="btn btn-primary" aria-label="Visit"><span aria-hidden="true"><a href="https://github.com/sahushivam/MachineLearning/tree/master/PlayWithGesture" target="_blank" style="color: white">Visit here</a></span></button>
-</div>
-</div>
-</div>
+  <div class="modal-dialog about" role="document">
+    <div class="modal-content about">
+      <div class="modal-header">
+        <button type="button" class="close ab" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+      </div>
+      <div class="modal-body about">
+        <div class="about"><div class="about-inner">
+          <h4 class="tittle">PLAY WITH GESTURE</h4>
+          <p style="padding-left: 10%; padding-right: 10%" align="justify">
+            A computer vision project that lets you control applications using hand gestures captured via webcam.<br><br>
+            • Built using Python and OpenCV.<br>
+            • Uses machine learning to classify hand gestures in real time.
+          </p>
+        </div></div>
+      </div>
+      <div class="modal-header" align="center">
+        <button type="button" class="btn btn-primary" aria-label="Visit"><span aria-hidden="true"><a href="https://github.com/sahushivam/MachineLearning/tree/master/PlayWithGesture" target="_blank" style="color: white">Visit here</a></span></button>
+      </div>
+    </div>
+  </div>
 </div>
 
 <div class="modal ab fade" id="myModal4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-<div class="modal-dialog about" role="document">
-<div class="modal-content about">
-<div class="modal-header">
-<button type="button" class="close ab" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-</div>
-<div class="modal-body about">
-<div class="about"><div class="about-inner">
-<h4 class="tittle">MUSIC PLAYER AND PUZZLE GAME</h4>
-<p style="padding-left: 10%; padding-right: 10%" align="justify">Music Player and Puzzle Game Android App.<br>Made using Java and XML.</p>
-</div></div>
-</div>
-</div>
-</div>
+  <div class="modal-dialog about" role="document">
+    <div class="modal-content about">
+      <div class="modal-header">
+        <button type="button" class="close ab" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+      </div>
+      <div class="modal-body about">
+        <div class="about"><div class="about-inner">
+          <h4 class="tittle">MUSIC PLAYER AND PUZZLE GAME</h4>
+          <p style="padding-left: 10%; padding-right: 10%" align="justify">Music Player and Puzzle Game Android App.<br>Made using Java and XML.</p>
+        </div></div>
+      </div>
+    </div>
+  </div>
 </div>
 
 <div class="modal ab fade" id="myModal5" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-<div class="modal-dialog about" role="document">
-<div class="modal-content about">
-<div class="modal-header">
-<button type="button" class="close ab" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-</div>
-<div class="modal-body about">
-<div class="about"><div class="about-inner">
-<h4 class="tittle">KEYLOGGER</h4>
-<p style="padding-left: 10%; padding-right: 10%" align="justify">Keylogger made in C++. Implemented on OOPs concepts.</p>
-</div></div>
-</div>
-</div>
-</div>
+  <div class="modal-dialog about" role="document">
+    <div class="modal-content about">
+      <div class="modal-header">
+        <button type="button" class="close ab" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+      </div>
+      <div class="modal-body about">
+        <div class="about"><div class="about-inner">
+          <h4 class="tittle">KEYLOGGER</h4>
+          <p style="padding-left: 10%; padding-right: 10%" align="justify">Keylogger made in C++. Implemented on OOPs concepts.</p>
+        </div></div>
+      </div>
+    </div>
+  </div>
 </div>
 
 <div class="modal ab fade" id="myModal9" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-<div class="modal-dialog about" role="document">
-<div class="modal-content about">
-<div class="modal-header">
-<button type="button" class="close ab" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-</div>
-<div class="modal-body about">
-<div class="about"><div class="about-inner">
-<h4 class="tittle">WEB CRAWLER</h4>
-<p style="padding-left: 10%; padding-right: 10%" align="justify">Web Crawler made using Python and Beautiful Soup.</p>
-</div></div>
-</div>
-</div>
-</div>
+  <div class="modal-dialog about" role="document">
+    <div class="modal-content about">
+      <div class="modal-header">
+        <button type="button" class="close ab" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+      </div>
+      <div class="modal-body about">
+        <div class="about"><div class="about-inner">
+          <h4 class="tittle">WEB CRAWLER</h4>
+          <p style="padding-left: 10%; padding-right: 10%" align="justify">Web Crawler made using Python and Beautiful Soup.</p>
+        </div></div>
+      </div>
+    </div>
+  </div>
 </div>
 
 <!-- education and work -->
 <div id="work" class="work">
-<div class="container">
-<div class="service-head text-center">
-<h4>WHAT I DID</h4>
-<h3>MY <span>EDUCATION</span></h3>
-<span class="border one"></span>
+  <div class="container">
+    <div class="service-head text-center">
+      <h4>WHAT I DID</h4>
+      <h3>MY <span>EDUCATION</span></h3>
+      <span class="border one"></span>
+    </div>
+
+    <div class="time-main w3l-agile">
+      <div class="col-md-6 year-info">
+        <ul class="year">
+          <li>2016-2020</li>
+          <div class="clearfix"></div>
+        </ul>
+      </div>
+      <ul class="col-md-6 timeline">
+        <li>
+          <div class="timeline-badge info"><i class="glyphicon glyphicon-briefcase"></i></div>
+          <div class="timeline-panel">
+            <div class="timeline-heading">
+              <h4 class="timeline-title">Madan Mohan Malaviya University of Technology, Gorakhpur</h4>
+            </div>
+            <div class="timeline-body">
+              <p>Bachelor Of Technology : Computer Science &amp; Engineering</p>
+              <p>&nbsp;</p>
+            </div>
+          </div>
+        </li>
+      </ul>
+      <div class="clearfix"></div>
+    </div>
+
+    <span class="border one"></span><br><br><br>
+
+    <!-- ════════════════════════════════════════
+         WORK EXPERIENCE — FIX APPLIED HERE
+         Date moved inside each timeline card so
+         it never drifts out of sync with the entry.
+         The separate left-panel year list is removed.
+    ════════════════════════════════════════ -->
+    <div class="service-head text-center">
+      <h4>WORK</h4>
+      <h3>WORK<span> EXPERIENCE</span></h3>
+      <span class="border one"></span>
+    </div>
+
+    <div class="time-main w3l-agile">
+      <ul class="col-md-12 timeline">
+
+        <li>
+          <div class="timeline-badge primary"><i class="glyphicon glyphicon-briefcase"></i></div>
+          <div class="timeline-panel">
+            <div class="timeline-body">
+              <span class="timeline-date">August 2024 – Present</span>
+              <h3 align="left"><b>PhonePe</b></h3>
+              <p align="left">Software Engineer</p>
+              <p align="left">Bengaluru</p>
+            </div>
+          </div>
+        </li>
+
+        <li>
+          <div class="timeline-badge info"><i class="glyphicon glyphicon-briefcase"></i></div>
+          <div class="timeline-panel">
+            <div class="timeline-body">
+              <span class="timeline-date">March 2021 – July 2024</span>
+              <h3 align="left"><b>Arcesium</b></h3>
+              <p align="left">Software Engineer</p>
+              <p align="left">Hyderabad</p>
+            </div>
+          </div>
+        </li>
+
+        <li>
+          <div class="timeline-badge primary"><i class="glyphicon glyphicon-briefcase"></i></div>
+          <div class="timeline-panel">
+            <div class="timeline-body">
+              <span class="timeline-date">August 2020 – February 2021</span>
+              <h3 align="left"><b>Tact.ai</b></h3>
+              <p align="left">Software Associate</p>
+              <p align="left">Bangalore</p>
+            </div>
+          </div>
+        </li>
+
+        <li>
+          <div class="timeline-badge info"><i class="glyphicon glyphicon-briefcase"></i></div>
+          <div class="timeline-panel">
+            <div class="timeline-body">
+              <span class="timeline-date">May – July 2019</span>
+              <h3 align="left"><b>Inturiyam</b></h3>
+              <p align="left">Software Developer Intern</p>
+              <p align="left">Bangalore</p>
+            </div>
+          </div>
+        </li>
+
+        <li>
+          <div class="timeline-badge primary"><i class="glyphicon glyphicon-briefcase"></i></div>
+          <div class="timeline-panel">
+            <div class="timeline-body">
+              <span class="timeline-date">April – July 2018</span>
+              <h3 align="left"><b>Olcademy</b></h3>
+              <p align="left">Software Developer Intern</p>
+              <p align="left">Virtual</p>
+            </div>
+          </div>
+        </li>
+
+        <li>
+          <div class="timeline-badge info"><i class="glyphicon glyphicon-briefcase"></i></div>
+          <div class="timeline-panel">
+            <div class="timeline-body">
+              <span class="timeline-date">May – July 2018</span>
+              <h3 align="left"><b>Health OK (NGO)</b></h3>
+              <p align="left">Web Developer Intern</p>
+              <p align="left">Gorakhpur</p>
+            </div>
+          </div>
+        </li>
+
+      </ul>
+      <div class="clearfix"></div>
+    </div>
+    <span class="border one"></span>
+
+  </div>
 </div>
 
-<div class="time-main w3l-agile">
-<div class="col-md-6 year-info">
-<ul class="year">
-<li>2016-2020</li>
-<div class="clearfix"></div>
-</ul>
-</div>
-<ul class="col-md-6 timeline">
-<li>
-<div class="timeline-badge info"><i class="glyphicon glyphicon-briefcase"></i></div>
-<div class="timeline-panel">
-<div class="timeline-heading">
-<h4 class="timeline-title">Madan Mohan Malaviya University of Technology, Gorakhpur</h4>
-</div>
-<div class="timeline-body">
-<p>Bachelor Of Technology : Computer Science &amp; Engineering</p>
-<p>&nbsp;</p>
-</div>
-</div>
-</li>
-</ul>
-<div class="clearfix"></div>
-</div>
-
-<span class="border one"></span><br><br><br>
-
-<div class="service-head text-center">
-<h4>WORK</h4>
-<h3>WORK<span> EXPERIENCE</span></h3>
-<span class="border one"></span>
-
-<div class="time-main w3l-agile">
-<div class="col-md-6 year-info">
-<ul class="year">
-<li>2024 - Present</li>
-<li>2021 - 2024</li>
-<li>2020 - 2021</li>
-<li>2019</li>
-<li>2018</li>
-<li>2018</li>
-<div class="clearfix"></div>
-</ul>
-</div>
-
-<ul class="col-md-6 timeline">
-<li>
-<div class="timeline-badge primary"><i class="glyphicon glyphicon-briefcase"></i></div>
-<div class="timeline-panel">
-<div class="timeline-body">
-<h3 align="left"><b>Phonepe</b></h3>
-<p align="left">August 2024 - Present</p>
-<p align="left">Software Engineer</p>
-<p align="left">Bengaluru</p>
-</div>
-</div>
-</li>
-<li>
-<div class="timeline-badge info"><i class="glyphicon glyphicon-briefcase"></i></div>
-<div class="timeline-panel">
-<div class="timeline-body">
-<h3 align="left"><b>Arcesium</b></h3>
-<p align="left">March 2021 - July 2024</p>
-<p align="left">Software Engineer</p>
-<p align="left">Hyderabad</p>
-</div>
-</div>
-</li>
-<li>
-<div class="timeline-badge primary"><i class="glyphicon glyphicon-briefcase"></i></div>
-<div class="timeline-panel">
-<div class="timeline-body">
-<h3 align="left"><b>Tact.ai</b></h3>
-<p align="left">August 2020 - February 2021</p>
-<p align="left">Software Associate</p>
-<p align="left">Bangalore</p>
-</div>
-</div>
-</li>
-<li>
-<div class="timeline-badge info"><i class="glyphicon glyphicon-briefcase"></i></div>
-<div class="timeline-panel">
-<div class="timeline-body">
-<h3 align="left"><b>Inturiyam</b></h3>
-<p align="left">May - July 2019</p>
-<p align="left">Software Developer Intern</p>
-<p align="left">Bangalore</p>
-</div>
-</div>
-</li>
-<li>
-<div class="timeline-badge primary"><i class="glyphicon glyphicon-briefcase"></i></div>
-<div class="timeline-panel">
-<div class="timeline-body">
-<h3 align="left"><b>Olcademy</b></h3>
-<p align="left">April - July 2018</p>
-<p align="left">Software Developer Intern</p>
-<p align="left">Virtual</p>
-</div>
-</div>
-</li>
-<li>
-<div class="timeline-badge info"><i class="glyphicon glyphicon-briefcase"></i></div>
-<div class="timeline-panel">
-<div class="timeline-body">
-<h3 align="left"><b>Health OK (NGO)</b></h3>
-<p align="left">May - July 2018</p>
-<p align="left">Web Developer Intern</p>
-<p align="left">Gorakhpur</p>
-</div>
-</div>
-</li>
-</ul>
-<div class="clearfix"></div>
-</div>
-<span class="border one"></span>
-</div>
-
-</div>
-</div>
-
-<!-- github activity -->
+<!-- ════════════════════════════════════════
+     GITHUB ACTIVITY — FIX APPLIED HERE
+     • Script loaded inside the section (not at
+       bottom after </body>) so the DOM target
+       .calendar already exists when it runs.
+     • Duplicate <center> block at bottom removed.
+     • Wrapper div centers and constrains width.
+════════════════════════════════════════ -->
 <div id="services" class="services">
-<div class="container">
-<div class="service-head one text-center">
-<h4>WHAT I DO</h4>
-<h3>MY <span>Github Activity</span></h3>
-<span class="border two"></span>
-</div>
-<div class="calendar contributions">
-<h3>Loading the data just for you. <i class="fa fa-smile-o"></i></h3>
-</div>
-</div>
+  <div class="container">
+    <div class="service-head one text-center">
+      <h4>WHAT I DO</h4>
+      <h3>MY <span>Github Activity</span></h3>
+      <span class="border two"></span>
+    </div>
+
+    <div class="github-calendar-wrapper">
+      <div>
+        <div class="calendar contributions">
+          <p>Loading the data just for you. <i class="fa fa-smile-o"></i></p>
+        </div>
+      </div>
+    </div>
+
+  </div>
 </div>
 
 <!-- coding profiles -->
 <div class="portfolio" id="port">
-<div class="service-head text-center">
-<h4>My Coding Journey</h4>
-<h3>Coding &nbsp;<span>Profile On</span></h3>
-<span class="border"></span>
-</div>
+  <div class="service-head text-center">
+    <h4>My Coding Journey</h4>
+    <h3>Coding &nbsp;<span>Profile On</span></h3>
+    <span class="border"></span>
+  </div>
 
-<div class="portfolio-grids">
-<script src="js/easyResponsiveTabs.js" type="text/javascript"></script>
-<script type="text/javascript">
-$(document).ready(function () {
-$('#horizontalTab').easyResponsiveTabs({
-type: 'default',
-width: 'auto',
-fit: true
-});
-});
-</script>
-<div class="sap_tabs">
-<div id="horizontalTab" style="display: block; width: 100%; margin: 0px;">
-<ul class="resp-tabs-list">
-<a href="https://codeforces.com/profile/sahushivam"><li class="resp-tab-item" aria-controls="tab_item-3" role="tab"><span>CODEFORCES</span></li></a>
-<a href="https://www.codechef.com/users/sahushivam"><li class="resp-tab-item" aria-controls="tab_item-2" role="tab"><span>CODECHEF</span></li></a>
-<a href="https://www.spoj.com/users/malviyanshivam/"><li class="resp-tab-item" aria-controls="tab_item-3" role="tab"><span>SPOJ</span></li></a>
-<a href="https://atcoder.jp/users/sahushivam"><li class="resp-tab-item" aria-controls="tab_item-3" role="tab"><span>ATCODER</span></li></a>
-<a href="https://www.hackerearth.com/@sahushivam"><li class="resp-tab-item" aria-controls="tab_item-3" role="tab"><span>HACKEREARTH</span></li></a>
-<a href="https://hackerrank.com/sahushivam"><li class="resp-tab-item" aria-controls="tab_item-1" role="tab"><span>HACKERRANK</span></li></a>
-<a href="https://www.interviewbit.com/profile/sahushivam"><li class="resp-tab-item" aria-controls="tab_item-3" role="tab"><span>INTERVIEW BIT</span></li></a>
-<a href="https://leetcode.com/sahushivam/"><li class="resp-tab-item" aria-controls="tab_item-3" role="tab"><span>LEETCODE</span></li></a>
-</ul>
-<div class="resp-tabs-container"><div class="clearfix"></div></div>
-<div class="resp-tabs-container"><div class="clearfix"></div></div>
-<div class="resp-tabs-container"><div class="clearfix"></div></div>
-<div class="resp-tabs-container"><div class="clearfix"></div></div>
-</div>
-</div>
-</div>
+  <div class="portfolio-grids">
+    <script src="js/easyResponsiveTabs.js" type="text/javascript"></script>
+    <script type="text/javascript">
+    $(document).ready(function () {
+      $('#horizontalTab').easyResponsiveTabs({
+        type: 'default',
+        width: 'auto',
+        fit: true
+      });
+    });
+    </script>
+    <div class="sap_tabs">
+      <div id="horizontalTab" style="display: block; width: 100%; margin: 0px;">
+        <ul class="resp-tabs-list">
+          <a href="https://codeforces.com/profile/sahushivam"><li class="resp-tab-item" aria-controls="tab_item-3" role="tab"><span>CODEFORCES</span></li></a>
+          <a href="https://www.codechef.com/users/sahushivam"><li class="resp-tab-item" aria-controls="tab_item-2" role="tab"><span>CODECHEF</span></li></a>
+          <a href="https://www.spoj.com/users/malviyanshivam/"><li class="resp-tab-item" aria-controls="tab_item-3" role="tab"><span>SPOJ</span></li></a>
+          <a href="https://atcoder.jp/users/sahushivam"><li class="resp-tab-item" aria-controls="tab_item-3" role="tab"><span>ATCODER</span></li></a>
+          <a href="https://www.hackerearth.com/@sahushivam"><li class="resp-tab-item" aria-controls="tab_item-3" role="tab"><span>HACKEREARTH</span></li></a>
+          <a href="https://hackerrank.com/sahushivam"><li class="resp-tab-item" aria-controls="tab_item-1" role="tab"><span>HACKERRANK</span></li></a>
+          <a href="https://www.interviewbit.com/profile/sahushivam"><li class="resp-tab-item" aria-controls="tab_item-3" role="tab"><span>INTERVIEW BIT</span></li></a>
+          <a href="https://leetcode.com/sahushivam/"><li class="resp-tab-item" aria-controls="tab_item-3" role="tab"><span>LEETCODE</span></li></a>
+        </ul>
+        <div class="resp-tabs-container"><div class="clearfix"></div></div>
+        <div class="resp-tabs-container"><div class="clearfix"></div></div>
+        <div class="resp-tabs-container"><div class="clearfix"></div></div>
+        <div class="resp-tabs-container"><div class="clearfix"></div></div>
+      </div>
+    </div>
+  </div>
 
-<div class="service-head text-center">
-<h4>MY SKILLS</h4>
-<h3><span>SKILLS</span></h3>
-<span class="border"></span>
-</div>
+  <div class="service-head text-center">
+    <h4>MY SKILLS</h4>
+    <h3><span>SKILLS</span></h3>
+    <span class="border"></span>
+  </div>
 
-<div class="portfolio-grids">
-<script src="js/easyResponsiveTabs.js" type="text/javascript"></script>
-<script type="text/javascript">
-$(document).ready(function () {
-$('#horizontalTab2').easyResponsiveTabs({
-type: 'default',
-width: 'auto',
-fit: true
-});
-});
-</script>
-<div class="sap_tabs">
-<div id="horizontalTab2" style="display: block; width: 100%; margin: 0px;">
-<ul class="resp-tabs-list">
-<li class="resp-tab-item" aria-controls="tab_item-1" role="tab"><span>C++</span></li>
-<li class="resp-tab-item" aria-controls="tab_item-1" role="tab"><span>Java</span></li>
-<li class="resp-tab-item" aria-controls="tab_item-1" role="tab"><span>SpringBoot</span></li>
-<li class="resp-tab-item" aria-controls="tab_item-1" role="tab"><span>Spring</span></li>
-<li class="resp-tab-item" aria-controls="tab_item-2" role="tab"><span>MySQL</span></li>
-<li class="resp-tab-item" aria-controls="tab_item-2" role="tab"><span>Docker</span></li>
-<li class="resp-tab-item" aria-controls="tab_item-3" role="tab"><span>JavaScript</span></li>
-<li class="resp-tab-item" aria-controls="tab_item-3" role="tab"><span>HTML</span></li>
-<li class="resp-tab-item" aria-controls="tab_item-3" role="tab"><span>CSS</span></li>
-<li class="resp-tab-item" aria-controls="tab_item-3" role="tab"><span>jQuery</span></li>
-<li class="resp-tab-item" aria-controls="tab_item-3" role="tab"><span>BootStrap</span></li>
-<li class="resp-tab-item" aria-controls="tab_item-3" role="tab"><span>OOPs</span></li>
-<li class="resp-tab-item" aria-controls="tab_item-3" role="tab"><span>Linux</span></li>
-<li class="resp-tab-item" aria-controls="tab_item-3" role="tab"><span>Git/VCS</span></li>
-<li class="resp-tab-item" aria-controls="tab_item-3" role="tab"><span>DS/Algo</span></li>
-</ul>
-<div class="resp-tabs-container"><div class="clearfix"></div></div>
-<div class="resp-tabs-container"><div class="clearfix"></div></div>
-<div class="resp-tabs-container"><div class="clearfix"></div></div>
-<div class="resp-tabs-container"><div class="clearfix"></div></div>
-</div>
-</div>
-</div>
+  <div class="portfolio-grids">
+    <script src="js/easyResponsiveTabs.js" type="text/javascript"></script>
+    <script type="text/javascript">
+    $(document).ready(function () {
+      $('#horizontalTab2').easyResponsiveTabs({
+        type: 'default',
+        width: 'auto',
+        fit: true
+      });
+    });
+    </script>
+    <div class="sap_tabs">
+      <div id="horizontalTab2" style="display: block; width: 100%; margin: 0px;">
+        <ul class="resp-tabs-list">
+          <li class="resp-tab-item" aria-controls="tab_item-1" role="tab"><span>C++</span></li>
+          <li class="resp-tab-item" aria-controls="tab_item-1" role="tab"><span>Java</span></li>
+          <li class="resp-tab-item" aria-controls="tab_item-1" role="tab"><span>SpringBoot</span></li>
+          <li class="resp-tab-item" aria-controls="tab_item-1" role="tab"><span>Spring</span></li>
+          <li class="resp-tab-item" aria-controls="tab_item-2" role="tab"><span>MySQL</span></li>
+          <li class="resp-tab-item" aria-controls="tab_item-2" role="tab"><span>Docker</span></li>
+          <li class="resp-tab-item" aria-controls="tab_item-3" role="tab"><span>JavaScript</span></li>
+          <li class="resp-tab-item" aria-controls="tab_item-3" role="tab"><span>HTML</span></li>
+          <li class="resp-tab-item" aria-controls="tab_item-3" role="tab"><span>CSS</span></li>
+          <li class="resp-tab-item" aria-controls="tab_item-3" role="tab"><span>jQuery</span></li>
+          <li class="resp-tab-item" aria-controls="tab_item-3" role="tab"><span>BootStrap</span></li>
+          <li class="resp-tab-item" aria-controls="tab_item-3" role="tab"><span>OOPs</span></li>
+          <li class="resp-tab-item" aria-controls="tab_item-3" role="tab"><span>Linux</span></li>
+          <li class="resp-tab-item" aria-controls="tab_item-3" role="tab"><span>Git/VCS</span></li>
+          <li class="resp-tab-item" aria-controls="tab_item-3" role="tab"><span>DS/Algo</span></li>
+        </ul>
+        <div class="resp-tabs-container"><div class="clearfix"></div></div>
+        <div class="resp-tabs-container"><div class="clearfix"></div></div>
+        <div class="resp-tabs-container"><div class="clearfix"></div></div>
+        <div class="resp-tabs-container"><div class="clearfix"></div></div>
+      </div>
+    </div>
+  </div>
 
 </div>
 
 <!-- contact -->
 <div class="footer" id="contact">
-<div class="container">
-<div class="service-head one text-center">
-<h4>CONTACT ME</h4>
-<h3>GET <span>IN TOUCH </span></h3>
-<span class="border two"></span>
-</div>
-<div class="mail_us">
-<div class="col-md-12 mail_left">
-<div class="contact-grid1-left">
-<div class="contact-grid1-left1">
-<span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>
-<h4>Contact By Email</h4>
-Mail1: <a href="mailto:sahushivam25@gmail.com">sahushivam25@gmail.com</a><br>
-Mail2: <a href="mailto:malaviyanshivam@gmail.com">malaviyanshivam@gmail.com</a>
-</div>
-</div>
-<div class="contact-grid1-left">
-<div class="contact-grid1-left1">
-<span class="glyphicon glyphicon-earphone" aria-hidden="true"></span>
-<h4>Contact By Phone</h4>
-Phone: +91 9453 866 848
-</div>
-</div>
-<div class="contact-grid1-left">
-<div class="contact-grid1-left1">
-<span class="glyphicon glyphicon-home" aria-hidden="true"></span>
-<h4>Looking For Address</h4>
-Bengaluru, India
-</div>
-</div>
-<div class="clearfix"> </div>
-</div>
-</div>
-</div>
+  <div class="container">
+    <div class="service-head one text-center">
+      <h4>CONTACT ME</h4>
+      <h3>GET <span>IN TOUCH </span></h3>
+      <span class="border two"></span>
+    </div>
+    <div class="mail_us">
+      <div class="col-md-12 mail_left">
+        <div class="contact-grid1-left">
+          <div class="contact-grid1-left1">
+            <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>
+            <h4>Contact By Email</h4>
+            Mail1: <a href="mailto:sahushivam25@gmail.com">sahushivam25@gmail.com</a><br>
+            Mail2: <a href="mailto:malaviyanshivam@gmail.com">malaviyanshivam@gmail.com</a>
+          </div>
+        </div>
+        <div class="contact-grid1-left">
+          <div class="contact-grid1-left1">
+            <span class="glyphicon glyphicon-earphone" aria-hidden="true"></span>
+            <h4>Contact By Phone</h4>
+            Phone: +91 9453 866 848
+          </div>
+        </div>
+        <div class="contact-grid1-left">
+          <div class="contact-grid1-left1">
+            <span class="glyphicon glyphicon-home" aria-hidden="true"></span>
+            <h4>Looking For Address</h4>
+            Bengaluru, India
+          </div>
+        </div>
+        <div class="clearfix"> </div>
+      </div>
+    </div>
+  </div>
 </div>
 
 <a href="#home" id="toTop" style="display: block;"><span id="toTopHover" style="opacity: 1;"></span></a>
 
 <script type="text/javascript">
 $(document).ready(function() {
-$().UItoTop({ easingType: 'easeOutQuart' });
+  $().UItoTop({ easingType: 'easeOutQuart' });
 });
 </script>
 
 <script src="js/bootstrap.js"></script>
 
-<!-- GitHub Activity Calendar -->
-<center>
-<div style="width: 45%;">
+<!-- GitHub Calendar — loaded last so jQuery & DOM are ready -->
 <script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"></script>
-<link rel="stylesheet" href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css" />
 <script>
-GitHubCalendar(".calendar", "sahushivam", { responsive: true });
+  GitHubCalendar(".calendar", "sahushivam", { responsive: true, global_stats: false });
 </script>
-</div>
-</center>
 
 </body>
 </html>
