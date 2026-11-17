@@ -65,10 +65,8 @@
     });
 
     dialog.addEventListener("click", (event) => {
-      if (event.target === dialog) {
-        closeDialog(dialog);
-        return;
-      }
+      if (event.target !== dialog) return;
+
       const bounds = dialog.getBoundingClientRect();
       const outside =
         event.clientX < bounds.left || event.clientX > bounds.right ||

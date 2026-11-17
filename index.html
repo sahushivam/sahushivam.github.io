@@ -88,7 +88,7 @@
           <article class="project-card project-card--flagship">
             <p class="project-stack">Java • Spring Boot • MongoDB</p>
             <h3>Redis-Lite</h3>
-            <p>In-memory data store with LRU eviction, concurrent command processing, and thread-safe state management.</p>
+            <p>A Java and Spring Boot implementation of Redis-style key-value operations, with an in-memory cache and MongoDB persistence.</p>
             <button class="button button-outline" type="button" data-dialog="myModal0" aria-haspopup="dialog" aria-controls="myModal0">Read more<span class="sr-only"> about Redis-Lite</span></button>
           </article>
           <article class="project-card project-card--flagship">
@@ -152,12 +152,12 @@
     <button class="dialog-close" type="button" data-close-dialog aria-label="Close project details">&times;</button>
     <p class="eyebrow">Java • Spring Boot • MongoDB</p>
     <h2 id="myModal0-title">Redis-Lite</h2>
-    <p>A ground-up implementation of core Redis semantics in Java, designed to explore the concurrency and memory-management challenges behind real-world in-memory data stores.</p>
+    <p>A Java and Spring Boot project exploring Redis-style operations through a REST API, with an in-memory cache and MongoDB persistence.</p>
     <ul>
-      <li><strong>Concurrency &amp; thread safety</strong> — Command dispatch is handled by a thread pool with fine-grained locking, guaranteeing atomicity of GET/SET/DEL operations under concurrent client load.</li>
-      <li><strong>LRU cache eviction</strong> — A custom doubly-linked-list + hash-map structure provides O(1) eviction, modelling the <code>maxmemory-policy allkeys-lru</code> behaviour of production Redis.</li>
-      <li><strong>Latency trade-offs</strong> — Persistence is backed by MongoDB with write-behind batching, decoupling hot-path read latency from durable-storage round-trips.</li>
-      <li><strong>Versioned concurrency control</strong> — Optimistic versioning via Spring Data guards against lost updates during concurrent write bursts.</li>
+      <li><strong>Key-value operations</strong> — Endpoints for setting, retrieving and deleting values.</li>
+      <li><strong>Cache and persistence</strong> — Reads check an in-memory map before querying MongoDB; writes save to MongoDB before returning.</li>
+      <li><strong>Expiry and TTL</strong> — Endpoints to set key expiration and inspect the remaining time to live.</li>
+      <li><strong>Sorted-set operations</strong> — Endpoints for adding scored members, looking up ranks and retrieving members within a score range.</li>
     </ul>
     <a class="button" href="https://github.com/sahushivam/Redis-Lite" target="_blank" rel="noopener noreferrer">View project on GitHub</a>
   </dialog>

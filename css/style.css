@@ -6,7 +6,13 @@
 :root {
   --accent: #00a78e;
   --accent-dark: #007d6b;
+  color-scheme: light dark;
   --ink: #1b242f;
+  --page-background: #fff;
+  --card-background: #fff;
+  --dark-section-background: #1b242f;
+  --button-background: #007d6b;
+  --button-text: #fff;
   --muted: #586574;
   --surface: #f4f7f8;
   --line: #dce4e7;
@@ -14,48 +20,11 @@
   --shadow: 0 12px 36px rgb(27 36 47 / 8%);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --accent: #3ddbc1;
-    --accent-dark: #5eecd2;
-    --ink: #e8edf2;
-    --muted: #a0b0be;
-    --surface: #1a2332;
-    --line: #2e3d4f;
-    --shadow: 0 12px 36px rgb(0 0 0 / 30%);
-  }
-  body { background: #0f1923; }
-  a { color: var(--accent); }
-  .hero { background: linear-gradient(110deg, rgb(8 14 22 / 90%), rgb(8 14 22 / 72%)), url('../images/bg.jpg') center / cover; }
-  .linkedin-card { background: #1a2332; border-color: var(--line); }
-  .project-card { background: #162029; border-color: #2a3a4a; }
-  .project-card > p:not(.project-stack) { color: var(--muted); }
-  .button-outline { border-color: #4a6270; color: #c4e6dc; }
-  .button-outline:hover { border-color: var(--accent); background: #14362e; }
-  .skill-group { background: #1a2332; }
-  .skill-list li { background: #14362e; border-color: #265e52; color: #8ee0cc; }
-  .timeline > li { border-left-color: var(--line); }
-  .timeline > li::before { box-shadow: 0 0 0 5px #0f1923; }
-  .timeline-card { border-color: var(--line); }
-  .education-card { background: #1a2332; border-color: var(--line); }
-  .profile-links a { border-color: var(--line); color: var(--ink); }
-  .profile-links a:hover { border-color: var(--accent); background: #14362e; color: var(--accent); }
-  .footer { background: linear-gradient(rgb(12 18 26 / 96%), rgb(12 18 26 / 96%)), url('../images/contact.jpeg') center / cover; }
-  .contact-card { border-color: #2e3d4f; }
-  .project-dialog { background: #1a2332; color: var(--ink); }
-  .project-dialog p, .project-dialog li { color: var(--muted); }
-  .project-dialog .eyebrow { color: var(--accent); }
-  .dialog-close { background: #253545; color: var(--ink); }
-  .dialog-close:hover { background: #2e3d4f; }
-  .back-to-top { border-color: rgb(255 255 255 / 15%); }
-  .footer-note { color: #7a8e9e; }
-}
-
 * { box-sizing: border-box; }
 html { scroll-behavior: smooth; }
 body {
   margin: 0;
-  background: #fff;
+  background: var(--page-background);
   color: var(--ink);
   font: 16px/1.75 'Open Sans', sans-serif;
   overflow-wrap: break-word;
@@ -77,7 +46,7 @@ p { margin-bottom: 1.2rem; }
 .container { width: min(1170px, calc(100% - 48px)); margin-inline: auto; }
 .section { padding-block: 88px; }
 .section-muted { background: var(--surface); }
-.section-dark { background: var(--ink); color: #fff; }
+.section-dark { background: var(--dark-section-background); color: #fff; }
 .section-heading { margin-bottom: 44px; text-align: center; }
 .section-heading h2 { margin-bottom: 0; }
 .section-heading::after {
@@ -105,7 +74,7 @@ p { margin-bottom: 1.2rem; }
   left: 12px;
   padding: 10px 18px;
   transform: translateY(-150%);
-  background: #fff;
+  background: var(--card-background);
   color: var(--ink);
   border-radius: 6px;
 }
@@ -230,7 +199,7 @@ p { margin-bottom: 1.2rem; }
   padding: 32px;
   border: 1px solid var(--line);
   border-radius: var(--radius);
-  background: #fff;
+  background: var(--card-background);
   box-shadow: var(--shadow);
 }
 .linkedin-brand { margin-bottom: 24px; color: #0a66c2; font-weight: 700; }
@@ -254,8 +223,8 @@ p { margin-bottom: 1.2rem; }
   padding: 10px 20px;
   border: 1px solid transparent;
   border-radius: 6px;
-  background: var(--accent-dark);
-  color: #fff;
+  background: var(--button-background);
+  color: var(--button-text);
   font-size: .9rem;
   font-weight: 600;
   line-height: 1.5;
@@ -264,7 +233,7 @@ p { margin-bottom: 1.2rem; }
   transition: background-color .18s, border-color .18s;
 }
 .button:hover { background: #006655; color: #fff; }
-.button-linkedin { background: #0a66c2; }
+.button-linkedin { background: #0a66c2; color: #fff; }
 .button-linkedin:hover { background: #084d94; }
 .button-outline { border-color: #4f6e77; background: transparent; color: #e4f7f2; }
 .button-outline:hover { border-color: var(--accent); background: #08705f; }
@@ -314,7 +283,7 @@ p { margin-bottom: 1.2rem; }
   padding: 40px;
   border: 0;
   border-radius: var(--radius);
-  background: #fff;
+  background: var(--card-background);
   color: var(--ink);
   box-shadow: 0 24px 80px rgb(0 0 0 / 30%);
   overflow-y: auto;
@@ -365,7 +334,7 @@ p { margin-bottom: 1.2rem; }
   height: 12px;
   border-radius: 50%;
   background: var(--accent);
-  box-shadow: 0 0 0 5px #fff;
+  box-shadow: 0 0 0 5px var(--page-background);
 }
 .timeline-card { padding: 24px 28px; border: 1px solid var(--line); border-radius: var(--radius); transition: transform .2s ease, box-shadow .2s ease; }
 .timeline-card:hover { transform: translateY(-4px); box-shadow: 0 8px 24px rgb(0 0 0 / 8%); }
@@ -373,7 +342,7 @@ p { margin-bottom: 1.2rem; }
 .timeline-card h3 { margin-bottom: 8px; }
 .timeline-card p { margin-bottom: 0; color: var(--muted); }
 .skills-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 22px; }
-.skill-group { padding: 28px; border: 1px solid var(--line); border-radius: var(--radius); background: #fff; transition: transform .2s ease, box-shadow .2s ease; }
+.skill-group { padding: 28px; border: 1px solid var(--line); border-radius: var(--radius); background: var(--card-background); transition: transform .2s ease, box-shadow .2s ease; }
 .skill-group:hover { transform: translateY(-4px); box-shadow: 0 8px 24px rgb(0 0 0 / 8%); }
 .skill-group h3 { margin-bottom: 20px; }
 .skill-list { display: flex; flex-wrap: wrap; gap: 8px; padding: 0; margin: 0; list-style: none; }
@@ -435,8 +404,8 @@ p { margin-bottom: 1.2rem; }
   height: 42px;
   border: 1px solid rgb(255 255 255 / 30%);
   border-radius: 50%;
-  background: var(--accent-dark);
-  color: #fff;
+  background: var(--button-background);
+  color: var(--button-text);
   text-decoration: none;
   box-shadow: 0 3px 16px rgb(0 0 0 / 20%);
   opacity: 0;
@@ -445,6 +414,40 @@ p { margin-bottom: 1.2rem; }
 }
 .back-to-top:hover { background: #006655; color: #fff; }
 .back-to-top.is-visible { opacity: 1; pointer-events: auto; }
+
+/* Keep theme overrides after base rules so component colors win the cascade. */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --accent: #3ddbc1;
+    --accent-dark: #5eecd2;
+    --ink: #e8edf2;
+    --muted: #a0b0be;
+    --page-background: #0f1923;
+    --card-background: #1a2332;
+    --dark-section-background: #111b26;
+    --button-background: #5eecd2;
+    --button-text: #10231f;
+    --surface: #1a2332;
+    --line: #2e3d4f;
+    --shadow: 0 12px 36px rgb(0 0 0 / 30%);
+  }
+  .hero { background: linear-gradient(110deg, rgb(8 14 22 / 90%), rgb(8 14 22 / 72%)), url('../images/bg.jpg') center / cover; }
+  .linkedin-brand { color: #78b9fa; }
+  .project-card { background: #162029; border-color: #2a3a4a; }
+  .project-card--flagship { border-color: var(--accent); }
+  .project-card > p:not(.project-stack) { color: var(--muted); }
+  .button-outline { border-color: #4a6270; color: #c4e6dc; }
+  .button-outline:hover { border-color: var(--accent); background: #14362e; }
+  .skill-list li { background: #14362e; border-color: #265e52; color: #8ee0cc; }
+  .skill-list li:hover { background: #1c493f; border-color: #3e806f; }
+  .profile-links a:hover { border-color: var(--accent); background: #14362e; color: var(--accent); }
+  .footer { background: linear-gradient(rgb(12 18 26 / 96%), rgb(12 18 26 / 96%)), url('../images/contact.jpeg') center / cover; }
+  .contact-card { border-color: #2e3d4f; }
+  .dialog-close { background: #253545; }
+  .dialog-close:hover { background: #2e3d4f; }
+  .back-to-top { border-color: rgb(255 255 255 / 15%); }
+  .footer-note { color: #a0b0be; }
+}
 
 @media (max-width: 1000px) {
   .site-header { gap: 18px; }
