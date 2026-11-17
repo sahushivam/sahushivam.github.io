@@ -1,0 +1,11 @@
+{
+  "name": "shivam-sahu-portfolio",
+  "private": true,
+  "scripts": {
+    "dev": "node scripts/serve.cjs",
+    "test": "node --test"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
